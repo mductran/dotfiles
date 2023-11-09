@@ -1,0 +1,6 @@
+[Default Applications]
+x-scheme-handler/eclipse+command=_usr_lib_dbeaver_.desktop
+image/jpeg=firefox.desktop
+
+[Added Associations]
+image/jpeg=firefox.desktop;

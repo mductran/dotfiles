@@ -1,0 +1,41 @@
+create function bstrings.GenerateTrigram(@string varchar(128))
+returns table
+with schemabinding
+as return
+	with 
+	N16 as 
+	(
+		select V.v
+		from 
+		(
+			values                    
+				(0),(0),(0),(0),(0),(0),(0),(0),
+                (0),(0),(0),(0),(0),(0),(0),(0)
+		) as V (v)
+	),
+	Nums as 
+	(
+		select n = row_number() over (order by A.v)
+		from N16 as A
+		cross join N16 as B
+	),
+	Trigrams as 
+	(
+		-- every 3 character substring
+		select 
+			trigrams = substring(@string, N.n, 3)
+		from Nums as N
+		order by N.n
+		limit (case )
+	)
+	
+-- ===================================================================================
+
+create function GenerateTrigram(string varchar) return table as $$
+	declare top int := case ;
+
+	begin
+		
+		
+	end;
+$$ language plpgsql;

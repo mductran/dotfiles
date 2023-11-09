@@ -1,0 +1,1 @@
+select phash, trigram from (select * from bstrings limit 1) b, generatetrigram(b.phash); 

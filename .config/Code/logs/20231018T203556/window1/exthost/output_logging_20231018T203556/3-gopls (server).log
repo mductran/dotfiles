@@ -1,0 +1,19 @@
+[Info  - 20:35:57] 2023/10/18 20:35:57 go info for /home/duc/code/go_bk
+(go dir /home/duc/code/go_bk)
+(go version go version go1.21.3 linux/amd64)
+(valid build configuration = true)
+(build flags: [])
+(selected go env: [GO111MODULE=, GOCACHE=/home/duc/.cache/go-build, GOFLAGS=, GOMODCACHE=/home/duc/go/pkg/mod, GOPATH=/home/duc/go, GOPRIVATE=, GOROOT=/usr/lib/go, GOWORK=])
+
+
+[Info  - 20:35:57] 2023/10/18 20:35:57 go/packages.Load #1
+	snapshot=0
+	directory=file:///home/duc/code/go_bk
+	query=[/home/duc/code/go_bk/... builtin]
+	packages=2
+
+[Info  - 20:35:57] 2023/10/18 20:35:57 go/packages.Load #1: updating metadata for 49 packages
+
+[Info  - 20:46:03] 2023/10/18 20:46:03 Shutdown session
+	shutdown_session=1
+

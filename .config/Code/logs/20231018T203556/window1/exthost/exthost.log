@@ -1,0 +1,14 @@
+2023-10-18 20:35:56.960 [info] Extension host with pid 7215 started
+2023-10-18 20:35:56.960 [info] Skipping acquiring lock for /home/duc/.config/Code/User/workspaceStorage/19b72b1ea5b1c5818be05fb5056abbca.
+2023-10-18 20:35:56.998 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2023-10-18 20:35:57.015 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2023-10-18 20:35:57.025 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2023-10-18 20:35:57.037 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2023-10-18 20:35:57.069 [info] ExtensionService#_doActivateExtension golang.go, startup: true, activationEvent: 'workspaceContains:*.go,*/*.go,*/*/*.go'
+2023-10-18 20:35:57.185 [info] Eager extensions activated
+2023-10-18 20:35:57.189 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2023-10-18 20:35:57.191 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2023-10-18 20:37:53.934 [info] ExtensionService#_doActivateExtension adpyke.vscode-sql-formatter, startup: false, activationEvent: 'onLanguage:sql'
+2023-10-18 20:38:06.610 [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+2023-10-18 20:46:03.385 [info] Extension host terminating: renderer closed the MessagePort
+2023-10-18 20:46:03.393 [info] Extension host with pid 7215 exiting with code 0

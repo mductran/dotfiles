@@ -1,0 +1,2 @@
+select count(*) from (select b.phash, gt trigram from (select * from bstrings20) b, generatetrigram(b.phash) gt) a; 
+

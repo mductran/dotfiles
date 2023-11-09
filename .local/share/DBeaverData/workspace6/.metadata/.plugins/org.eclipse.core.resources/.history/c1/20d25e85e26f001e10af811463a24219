@@ -1,0 +1,1 @@
+select * from unnest(show_trgm('hello world')) as unt where length(unt) = 3;

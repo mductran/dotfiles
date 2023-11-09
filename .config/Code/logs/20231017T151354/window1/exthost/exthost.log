@@ -1,0 +1,21 @@
+2023-10-17 15:13:55.179 [info] Extension host with pid 4025 started
+2023-10-17 15:13:55.179 [info] Skipping acquiring lock for /home/duc/.config/Code/User/workspaceStorage/19b72b1ea5b1c5818be05fb5056abbca.
+2023-10-17 15:13:55.219 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2023-10-17 15:13:55.222 [info] ExtensionService#_doActivateExtension golang.go, startup: false, activationEvent: 'onLanguage:go'
+2023-10-17 15:13:55.492 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2023-10-17 15:13:55.504 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2023-10-17 15:13:55.516 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2023-10-17 15:13:55.599 [info] Eager extensions activated
+2023-10-17 15:13:55.632 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2023-10-17 15:13:55.634 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2023-10-17 15:13:56.530 [info] Extension host terminating: renderer closed the MessagePort
+2023-10-17 15:13:56.547 [error] ProxyResolver#resolveProxy undefined Canceled: Canceled
+	at new g (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:125:57216)
+	at i.U (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:134:10864)
+	at M.<computed>.j.charCodeAt.M.<computed> (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:134:8315)
+	at f.resolveProxy (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:135:34990)
+	at Object.resolveProxy (/opt/visual-studio-code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:117:33285)
+	at useProxySettings (/opt/visual-studio-code/resources/app/node_modules.asar/@vscode/proxy-agent/out/index.js:165:16)
+	at /opt/visual-studio-code/resources/app/node_modules.asar/@vscode/proxy-agent/out/index.js:113:13
+	at /opt/visual-studio-code/resources/app/node_modules.asar/@vscode/proxy-agent/out/index.js:466:13 
+2023-10-17 15:13:56.555 [info] Extension host with pid 4025 exiting with code 0

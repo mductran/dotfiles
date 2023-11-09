@@ -1,0 +1,2426 @@
+!SESSION 2023-10-21 13:57:02.755 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=21
+java.vendor=N/A
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_GB
+Framework arguments:  -eclipse.keyring /home/duc/.local/share/DBeaverData/secure/secure_storage
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+This is a continuation of log file /home/duc/.local/share/DBeaverData/workspace6/.metadata/.bak_0.log
+Created Time: 2023-10-21 14:16:09.077
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:16:09.077
+!MESSAGE SQL Error [42601]: ERROR: syntax error at or near "as"
+  Position: 256
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-21 14:16:09.077
+!MESSAGE ERROR: syntax error at or near "as"
+  Position: 256
+!STACK 0
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "as"
+  Position: 256
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:290)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:131)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:582)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$1(SQLQueryJob.java:491)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:498)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:934)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4093)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:123)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:121)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5148)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:17:48.979
+!MESSAGE Error resolving object
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-21 14:17:48.979
+!MESSAGE Procedure 'getbesttrigrams' not found in schema 'public'
+!STACK 0
+org.jkiss.dbeaver.DBException: Procedure 'getbesttrigrams' not found in schema 'public'
+	at org.jkiss.dbeaver.ext.postgresql.model.PostgreStructureAssistant$2.resolveObject(PostgreStructureAssistant.java:273)
+	at org.jkiss.dbeaver.ui.editors.sql.dialogs.SuggestionInformationControl$1.run(SuggestionInformationControl.java:130)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:17:49.606
+!MESSAGE Error resolving procedure parameters
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-21 14:17:49.606
+!MESSAGE Procedure 'getbesttrigrams' not found in schema 'public'
+!STACK 0
+org.jkiss.dbeaver.DBException: Procedure 'getbesttrigrams' not found in schema 'public'
+	at org.jkiss.dbeaver.ext.postgresql.model.PostgreStructureAssistant$2.resolveObject(PostgreStructureAssistant.java:273)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionProposalBase.getExtraString(SQLCompletionProposalBase.java:212)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProposal.apply(SQLCompletionProposal.java:92)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProposal.apply(SQLCompletionProposal.java:174)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.insertProposal(CompletionProposalPopup.java:999)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.insertSelectedProposalWithMask(CompletionProposalPopup.java:951)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.verifyKey(CompletionProposalPopup.java:1398)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$InternalListener.verifyKey(ContentAssistant.java:828)
+	at org.eclipse.jface.text.TextViewer$VerifyKeyListenersManager.verifyKey(TextViewer.java:480)
+	at org.eclipse.swt.custom.StyledTextListener.handleEvent(StyledTextListener.java:70)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5855)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1529)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1555)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1538)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1316)
+	at org.eclipse.swt.custom.StyledText.handleKeyDown(StyledText.java:5742)
+	at org.eclipse.swt.custom.StyledText.lambda$28(StyledText.java:5426)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5855)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1529)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1555)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1538)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1577)
+	at org.eclipse.swt.widgets.Widget.gtk_key_press_event(Widget.java:937)
+	at org.eclipse.swt.widgets.Control.gtk_key_press_event(Control.java:4049)
+	at org.eclipse.swt.widgets.Composite.gtk_key_press_event(Composite.java:931)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:2507)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:6883)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:6163)
+	at org.eclipse.swt.internal.gtk3.GTK3.gtk_main_do_event(Native Method)
+	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1597)
+	at org.eclipse.swt.internal.gtk3.GTK3.gtk_main_iteration_do(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4514)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.jkiss.dbeaver.ui.app.standalone.DBeaverApplication.start(DBeaverApplication.java:280)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:18:17.085
+!MESSAGE SQL Error [42703]: ERROR: column gt.trigram does not exist
+  Hint: Perhaps you meant to reference the column "tcv.trigram".
+  Where: PL/pgSQL function getbesttrigrams(text) line 3 at RETURN QUERY
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-21 14:18:17.085
+!MESSAGE ERROR: column gt.trigram does not exist
+  Hint: Perhaps you meant to reference the column "tcv.trigram".
+  Where: PL/pgSQL function getbesttrigrams(text) line 3 at RETURN QUERY
+!STACK 0
+org.postgresql.util.PSQLException: ERROR: column gt.trigram does not exist
+  Hint: Perhaps you meant to reference the column "tcv.trigram".
+  Where: PL/pgSQL function getbesttrigrams(text) line 3 at RETURN QUERY
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:290)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:131)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:582)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$1(SQLQueryJob.java:491)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:498)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:934)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4093)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:123)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:121)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5148)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:18:46.620
+!MESSAGE SQL Error [42703]: ERROR: column gt.trigram does not exist
+  Hint: Perhaps you meant to reference the column "tcv.trigram".
+  Where: PL/pgSQL function getbesttrigrams(text) line 3 at RETURN QUERY
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-21 14:18:46.620
+!MESSAGE ERROR: column gt.trigram does not exist
+  Hint: Perhaps you meant to reference the column "tcv.trigram".
+  Where: PL/pgSQL function getbesttrigrams(text) line 3 at RETURN QUERY
+!STACK 0
+org.postgresql.util.PSQLException: ERROR: column gt.trigram does not exist
+  Hint: Perhaps you meant to reference the column "tcv.trigram".
+  Where: PL/pgSQL function getbesttrigrams(text) line 3 at RETURN QUERY
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:290)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:131)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:582)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$1(SQLQueryJob.java:491)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:498)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:934)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4093)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:123)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:121)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5148)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:18:52.938
+!MESSAGE SQL Error [42703]: ERROR: column gt.trigram does not exist
+  Hint: Perhaps you meant to reference the column "tcv.trigram".
+  Where: PL/pgSQL function getbesttrigrams(text) line 3 at RETURN QUERY
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-21 14:18:52.938
+!MESSAGE ERROR: column gt.trigram does not exist
+  Hint: Perhaps you meant to reference the column "tcv.trigram".
+  Where: PL/pgSQL function getbesttrigrams(text) line 3 at RETURN QUERY
+!STACK 0
+org.postgresql.util.PSQLException: ERROR: column gt.trigram does not exist
+  Hint: Perhaps you meant to reference the column "tcv.trigram".
+  Where: PL/pgSQL function getbesttrigrams(text) line 3 at RETURN QUERY
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:290)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:131)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:582)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$1(SQLQueryJob.java:491)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:498)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:934)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4093)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:123)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:121)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5148)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:18:53.686
+!MESSAGE SQL Error [42703]: ERROR: column gt.trigram does not exist
+  Hint: Perhaps you meant to reference the column "tcv.trigram".
+  Where: PL/pgSQL function getbesttrigrams(text) line 3 at RETURN QUERY
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-21 14:18:53.686
+!MESSAGE ERROR: column gt.trigram does not exist
+  Hint: Perhaps you meant to reference the column "tcv.trigram".
+  Where: PL/pgSQL function getbesttrigrams(text) line 3 at RETURN QUERY
+!STACK 0
+org.postgresql.util.PSQLException: ERROR: column gt.trigram does not exist
+  Hint: Perhaps you meant to reference the column "tcv.trigram".
+  Where: PL/pgSQL function getbesttrigrams(text) line 3 at RETURN QUERY
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:290)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:131)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:582)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$1(SQLQueryJob.java:491)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:498)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:934)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4093)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:123)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:121)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5148)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:18:53.866
+!MESSAGE SQL Error [42703]: ERROR: column gt.trigram does not exist
+  Hint: Perhaps you meant to reference the column "tcv.trigram".
+  Where: PL/pgSQL function getbesttrigrams(text) line 3 at RETURN QUERY
+
+Error position:
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-21 14:18:53.866
+!MESSAGE SQL Error [42703]: ERROR: column gt.trigram does not exist
+  Hint: Perhaps you meant to reference the column "tcv.trigram".
+  Where: PL/pgSQL function getbesttrigrams(text) line 3 at RETURN QUERY
+!SUBENTRY 2 org.jkiss.dbeaver.model 4 0 2023-10-21 14:18:53.866
+!MESSAGE ERROR: column gt.trigram does not exist
+  Hint: Perhaps you meant to reference the column "tcv.trigram".
+  Where: PL/pgSQL function getbesttrigrams(text) line 3 at RETURN QUERY
+!STACK 0
+org.postgresql.util.PSQLException: ERROR: column gt.trigram does not exist
+  Hint: Perhaps you meant to reference the column "tcv.trigram".
+  Where: PL/pgSQL function getbesttrigrams(text) line 3 at RETURN QUERY
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:290)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:131)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:582)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$1(SQLQueryJob.java:491)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:498)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:934)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4093)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:123)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:121)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5148)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:18:54.042
+!MESSAGE SQL Error [42703]: ERROR: column gt.trigram does not exist
+  Hint: Perhaps you meant to reference the column "tcv.trigram".
+  Where: PL/pgSQL function getbesttrigrams(text) line 3 at RETURN QUERY
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-21 14:18:54.042
+!MESSAGE ERROR: column gt.trigram does not exist
+  Hint: Perhaps you meant to reference the column "tcv.trigram".
+  Where: PL/pgSQL function getbesttrigrams(text) line 3 at RETURN QUERY
+!STACK 0
+org.postgresql.util.PSQLException: ERROR: column gt.trigram does not exist
+  Hint: Perhaps you meant to reference the column "tcv.trigram".
+  Where: PL/pgSQL function getbesttrigrams(text) line 3 at RETURN QUERY
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:290)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:131)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:582)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$1(SQLQueryJob.java:491)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:498)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:934)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4093)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:123)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:121)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5148)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:18:54.197
+!MESSAGE SQL Error [42703]: ERROR: column gt.trigram does not exist
+  Hint: Perhaps you meant to reference the column "tcv.trigram".
+  Where: PL/pgSQL function getbesttrigrams(text) line 3 at RETURN QUERY
+
+Error position:
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-21 14:18:54.197
+!MESSAGE SQL Error [42703]: ERROR: column gt.trigram does not exist
+  Hint: Perhaps you meant to reference the column "tcv.trigram".
+  Where: PL/pgSQL function getbesttrigrams(text) line 3 at RETURN QUERY
+!SUBENTRY 2 org.jkiss.dbeaver.model 4 0 2023-10-21 14:18:54.197
+!MESSAGE ERROR: column gt.trigram does not exist
+  Hint: Perhaps you meant to reference the column "tcv.trigram".
+  Where: PL/pgSQL function getbesttrigrams(text) line 3 at RETURN QUERY
+!STACK 0
+org.postgresql.util.PSQLException: ERROR: column gt.trigram does not exist
+  Hint: Perhaps you meant to reference the column "tcv.trigram".
+  Where: PL/pgSQL function getbesttrigrams(text) line 3 at RETURN QUERY
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:290)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:131)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:582)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$1(SQLQueryJob.java:491)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:498)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:934)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4093)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:123)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:121)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5148)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:18:54.895
+!MESSAGE SQL Error [42703]: ERROR: column gt.trigram does not exist
+  Hint: Perhaps you meant to reference the column "tcv.trigram".
+  Where: PL/pgSQL function getbesttrigrams(text) line 3 at RETURN QUERY
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-21 14:18:54.895
+!MESSAGE ERROR: column gt.trigram does not exist
+  Hint: Perhaps you meant to reference the column "tcv.trigram".
+  Where: PL/pgSQL function getbesttrigrams(text) line 3 at RETURN QUERY
+!STACK 0
+org.postgresql.util.PSQLException: ERROR: column gt.trigram does not exist
+  Hint: Perhaps you meant to reference the column "tcv.trigram".
+  Where: PL/pgSQL function getbesttrigrams(text) line 3 at RETURN QUERY
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:290)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:131)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:582)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$1(SQLQueryJob.java:491)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:498)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:934)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4093)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:123)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:121)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5148)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:18:55.168
+!MESSAGE SQL Error [42703]: ERROR: column gt.trigram does not exist
+  Hint: Perhaps you meant to reference the column "tcv.trigram".
+  Where: PL/pgSQL function getbesttrigrams(text) line 3 at RETURN QUERY
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-21 14:18:55.168
+!MESSAGE ERROR: column gt.trigram does not exist
+  Hint: Perhaps you meant to reference the column "tcv.trigram".
+  Where: PL/pgSQL function getbesttrigrams(text) line 3 at RETURN QUERY
+!STACK 0
+org.postgresql.util.PSQLException: ERROR: column gt.trigram does not exist
+  Hint: Perhaps you meant to reference the column "tcv.trigram".
+  Where: PL/pgSQL function getbesttrigrams(text) line 3 at RETURN QUERY
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:290)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:131)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:582)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$1(SQLQueryJob.java:491)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:498)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:934)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4093)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:123)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:121)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5148)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:19:03.918
+!MESSAGE SQL Error [42703]: ERROR: column gt.trigram does not exist
+  Hint: Perhaps you meant to reference the column "tcv.trigram".
+  Where: PL/pgSQL function getbesttrigrams(text) line 3 at RETURN QUERY
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-21 14:19:03.918
+!MESSAGE ERROR: column gt.trigram does not exist
+  Hint: Perhaps you meant to reference the column "tcv.trigram".
+  Where: PL/pgSQL function getbesttrigrams(text) line 3 at RETURN QUERY
+!STACK 0
+org.postgresql.util.PSQLException: ERROR: column gt.trigram does not exist
+  Hint: Perhaps you meant to reference the column "tcv.trigram".
+  Where: PL/pgSQL function getbesttrigrams(text) line 3 at RETURN QUERY
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:290)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:131)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:582)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$1(SQLQueryJob.java:491)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:498)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:934)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4093)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:123)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:121)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5148)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:19:08.278
+!MESSAGE SQL Error [42703]: ERROR: column gt.trigram does not exist
+  Hint: Perhaps you meant to reference the column "tcv.trigram".
+  Where: PL/pgSQL function getbesttrigrams(text) line 3 at RETURN QUERY
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-21 14:19:08.278
+!MESSAGE ERROR: column gt.trigram does not exist
+  Hint: Perhaps you meant to reference the column "tcv.trigram".
+  Where: PL/pgSQL function getbesttrigrams(text) line 3 at RETURN QUERY
+!STACK 0
+org.postgresql.util.PSQLException: ERROR: column gt.trigram does not exist
+  Hint: Perhaps you meant to reference the column "tcv.trigram".
+  Where: PL/pgSQL function getbesttrigrams(text) line 3 at RETURN QUERY
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:290)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:131)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:582)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$1(SQLQueryJob.java:491)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:498)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:934)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4093)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:123)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:121)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5148)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:19:49.271
+!MESSAGE SQL Error [42601]: ERROR: syntax error at or near "unnest"
+  Position: 1
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-21 14:19:49.271
+!MESSAGE ERROR: syntax error at or near "unnest"
+  Position: 1
+!STACK 0
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "unnest"
+  Position: 1
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:290)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:131)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:582)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$1(SQLQueryJob.java:491)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:498)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:934)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4093)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:123)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:121)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5148)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:20:15.379
+!MESSAGE Finding tables from CreateFunctionalStatement is not supported
+!STACK 0
+java.lang.UnsupportedOperationException: Finding tables from CreateFunctionalStatement is not supported
+	at net.sf.jsqlparser.util.TablesNamesFinder.visit(TablesNamesFinder.java:936)
+	at net.sf.jsqlparser.statement.CreateFunctionalStatement.accept(CreateFunctionalStatement.java:89)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1267)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1219)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromChildren(SQLCompletionAnalyzer.java:1134)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeDataSourceProposals(SQLCompletionAnalyzer.java:936)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:357)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:133)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:117)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:348)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:20:18.233
+!MESSAGE Finding tables from CreateFunctionalStatement is not supported
+!STACK 0
+java.lang.UnsupportedOperationException: Finding tables from CreateFunctionalStatement is not supported
+	at net.sf.jsqlparser.util.TablesNamesFinder.visit(TablesNamesFinder.java:936)
+	at net.sf.jsqlparser.statement.CreateFunctionalStatement.accept(CreateFunctionalStatement.java:89)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1267)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1219)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromChildren(SQLCompletionAnalyzer.java:1134)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeDataSourceProposals(SQLCompletionAnalyzer.java:936)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:357)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:133)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:117)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:348)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:20:18.299
+!MESSAGE Finding tables from CreateFunctionalStatement is not supported
+!STACK 0
+java.lang.UnsupportedOperationException: Finding tables from CreateFunctionalStatement is not supported
+	at net.sf.jsqlparser.util.TablesNamesFinder.visit(TablesNamesFinder.java:936)
+	at net.sf.jsqlparser.statement.CreateFunctionalStatement.accept(CreateFunctionalStatement.java:89)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1267)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1219)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromChildren(SQLCompletionAnalyzer.java:1134)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeDataSourceProposals(SQLCompletionAnalyzer.java:936)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:357)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:133)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:117)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:348)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:20:20.370
+!MESSAGE Finding tables from CreateFunctionalStatement is not supported
+!STACK 0
+java.lang.UnsupportedOperationException: Finding tables from CreateFunctionalStatement is not supported
+	at net.sf.jsqlparser.util.TablesNamesFinder.visit(TablesNamesFinder.java:936)
+	at net.sf.jsqlparser.statement.CreateFunctionalStatement.accept(CreateFunctionalStatement.java:89)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1267)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1219)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromChildren(SQLCompletionAnalyzer.java:1134)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeDataSourceProposals(SQLCompletionAnalyzer.java:936)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:357)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:133)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:117)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:348)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:20:26.831
+!MESSAGE Finding tables from CreateFunctionalStatement is not supported
+!STACK 0
+java.lang.UnsupportedOperationException: Finding tables from CreateFunctionalStatement is not supported
+	at net.sf.jsqlparser.util.TablesNamesFinder.visit(TablesNamesFinder.java:936)
+	at net.sf.jsqlparser.statement.CreateFunctionalStatement.accept(CreateFunctionalStatement.java:89)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1267)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1219)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromChildren(SQLCompletionAnalyzer.java:1134)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeDataSourceProposals(SQLCompletionAnalyzer.java:936)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:357)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:133)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:117)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:348)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:20:26.937
+!MESSAGE Finding tables from CreateFunctionalStatement is not supported
+!STACK 0
+java.lang.UnsupportedOperationException: Finding tables from CreateFunctionalStatement is not supported
+	at net.sf.jsqlparser.util.TablesNamesFinder.visit(TablesNamesFinder.java:936)
+	at net.sf.jsqlparser.statement.CreateFunctionalStatement.accept(CreateFunctionalStatement.java:89)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1267)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1219)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromChildren(SQLCompletionAnalyzer.java:1134)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeDataSourceProposals(SQLCompletionAnalyzer.java:936)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:357)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:133)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:117)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:348)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:20:27.019
+!MESSAGE Finding tables from CreateFunctionalStatement is not supported
+!STACK 0
+java.lang.UnsupportedOperationException: Finding tables from CreateFunctionalStatement is not supported
+	at net.sf.jsqlparser.util.TablesNamesFinder.visit(TablesNamesFinder.java:936)
+	at net.sf.jsqlparser.statement.CreateFunctionalStatement.accept(CreateFunctionalStatement.java:89)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1267)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1219)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromChildren(SQLCompletionAnalyzer.java:1134)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeDataSourceProposals(SQLCompletionAnalyzer.java:936)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:357)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:133)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:117)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:348)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:20:27.087
+!MESSAGE Finding tables from CreateFunctionalStatement is not supported
+!STACK 0
+java.lang.UnsupportedOperationException: Finding tables from CreateFunctionalStatement is not supported
+	at net.sf.jsqlparser.util.TablesNamesFinder.visit(TablesNamesFinder.java:936)
+	at net.sf.jsqlparser.statement.CreateFunctionalStatement.accept(CreateFunctionalStatement.java:89)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1267)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1219)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromChildren(SQLCompletionAnalyzer.java:1134)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeDataSourceProposals(SQLCompletionAnalyzer.java:936)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:357)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:133)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:117)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:348)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:20:27.170
+!MESSAGE Finding tables from CreateFunctionalStatement is not supported
+!STACK 0
+java.lang.UnsupportedOperationException: Finding tables from CreateFunctionalStatement is not supported
+	at net.sf.jsqlparser.util.TablesNamesFinder.visit(TablesNamesFinder.java:936)
+	at net.sf.jsqlparser.statement.CreateFunctionalStatement.accept(CreateFunctionalStatement.java:89)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1267)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1219)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromChildren(SQLCompletionAnalyzer.java:1134)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeDataSourceProposals(SQLCompletionAnalyzer.java:936)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:357)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:133)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:117)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:348)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:20:27.231
+!MESSAGE Finding tables from CreateFunctionalStatement is not supported
+!STACK 0
+java.lang.UnsupportedOperationException: Finding tables from CreateFunctionalStatement is not supported
+	at net.sf.jsqlparser.util.TablesNamesFinder.visit(TablesNamesFinder.java:936)
+	at net.sf.jsqlparser.statement.CreateFunctionalStatement.accept(CreateFunctionalStatement.java:89)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1267)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1219)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromChildren(SQLCompletionAnalyzer.java:1134)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeDataSourceProposals(SQLCompletionAnalyzer.java:936)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:357)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:133)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:117)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:348)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:20:31.147
+!MESSAGE Finding tables from CreateFunctionalStatement is not supported
+!STACK 0
+java.lang.UnsupportedOperationException: Finding tables from CreateFunctionalStatement is not supported
+	at net.sf.jsqlparser.util.TablesNamesFinder.visit(TablesNamesFinder.java:936)
+	at net.sf.jsqlparser.statement.CreateFunctionalStatement.accept(CreateFunctionalStatement.java:89)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1267)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1219)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromChildren(SQLCompletionAnalyzer.java:1134)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeDataSourceProposals(SQLCompletionAnalyzer.java:936)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:357)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:133)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:117)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:348)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:20:33.484
+!MESSAGE Finding tables from CreateFunctionalStatement is not supported
+!STACK 0
+java.lang.UnsupportedOperationException: Finding tables from CreateFunctionalStatement is not supported
+	at net.sf.jsqlparser.util.TablesNamesFinder.visit(TablesNamesFinder.java:936)
+	at net.sf.jsqlparser.statement.CreateFunctionalStatement.accept(CreateFunctionalStatement.java:89)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1267)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1219)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromChildren(SQLCompletionAnalyzer.java:1134)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeDataSourceProposals(SQLCompletionAnalyzer.java:936)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:357)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:133)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:117)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:348)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:20:33.492
+!MESSAGE Finding tables from CreateFunctionalStatement is not supported
+!STACK 0
+java.lang.UnsupportedOperationException: Finding tables from CreateFunctionalStatement is not supported
+	at net.sf.jsqlparser.util.TablesNamesFinder.visit(TablesNamesFinder.java:936)
+	at net.sf.jsqlparser.statement.CreateFunctionalStatement.accept(CreateFunctionalStatement.java:89)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1267)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1219)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromChildren(SQLCompletionAnalyzer.java:1134)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeDataSourceProposals(SQLCompletionAnalyzer.java:936)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:357)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:133)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:117)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:348)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:20:34.115
+!MESSAGE Finding tables from CreateFunctionalStatement is not supported
+!STACK 0
+java.lang.UnsupportedOperationException: Finding tables from CreateFunctionalStatement is not supported
+	at net.sf.jsqlparser.util.TablesNamesFinder.visit(TablesNamesFinder.java:936)
+	at net.sf.jsqlparser.statement.CreateFunctionalStatement.accept(CreateFunctionalStatement.java:89)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1267)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1219)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromChildren(SQLCompletionAnalyzer.java:1134)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeDataSourceProposals(SQLCompletionAnalyzer.java:936)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:357)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:133)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:117)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:348)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:21:11.761
+!MESSAGE SQL Error [42601]: ERROR: syntax error at or near "as"
+  Position: 527
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-21 14:21:11.761
+!MESSAGE ERROR: syntax error at or near "as"
+  Position: 527
+!STACK 0
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "as"
+  Position: 527
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:290)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:131)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:582)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$1(SQLQueryJob.java:491)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:498)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:934)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4093)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:123)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:121)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5148)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:21:28.837
+!MESSAGE Finding tables from CreateFunctionalStatement is not supported
+!STACK 0
+java.lang.UnsupportedOperationException: Finding tables from CreateFunctionalStatement is not supported
+	at net.sf.jsqlparser.util.TablesNamesFinder.visit(TablesNamesFinder.java:936)
+	at net.sf.jsqlparser.statement.CreateFunctionalStatement.accept(CreateFunctionalStatement.java:89)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1267)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1219)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromChildren(SQLCompletionAnalyzer.java:1134)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeDataSourceProposals(SQLCompletionAnalyzer.java:936)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:357)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:133)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:117)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:348)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:22:11.085
+!MESSAGE SQL Error [42601]: ERROR: syntax error at or near "as"
+  Position: 623
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-21 14:22:11.085
+!MESSAGE ERROR: syntax error at or near "as"
+  Position: 623
+!STACK 0
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "as"
+  Position: 623
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:290)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:131)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:582)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$1(SQLQueryJob.java:491)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:498)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:934)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4093)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:123)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:121)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5148)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:22:12.256
+!MESSAGE SQL Error [42601]: ERROR: syntax error at or near "as"
+  Position: 623
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-21 14:22:12.256
+!MESSAGE ERROR: syntax error at or near "as"
+  Position: 623
+!STACK 0
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "as"
+  Position: 623
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:290)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:131)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:582)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$1(SQLQueryJob.java:491)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:498)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:934)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4093)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:123)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:121)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5148)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:22:12.827
+!MESSAGE SQL Error [42601]: ERROR: syntax error at or near "as"
+  Position: 623
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-21 14:22:12.827
+!MESSAGE ERROR: syntax error at or near "as"
+  Position: 623
+!STACK 0
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "as"
+  Position: 623
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:290)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:131)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:582)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$1(SQLQueryJob.java:491)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:498)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:934)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4093)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:123)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:121)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5148)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:22:13.026
+!MESSAGE SQL Error [42601]: ERROR: syntax error at or near "as"
+  Position: 623
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-21 14:22:13.026
+!MESSAGE ERROR: syntax error at or near "as"
+  Position: 623
+!STACK 0
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "as"
+  Position: 623
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:290)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:131)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:582)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$1(SQLQueryJob.java:491)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:498)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:934)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4093)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:123)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:121)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5148)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:22:13.195
+!MESSAGE SQL Error [42601]: ERROR: syntax error at or near "as"
+  Position: 623
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-21 14:22:13.195
+!MESSAGE ERROR: syntax error at or near "as"
+  Position: 623
+!STACK 0
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "as"
+  Position: 623
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:290)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:131)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:582)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$1(SQLQueryJob.java:491)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:498)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:934)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4093)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:123)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:121)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5148)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:22:13.371
+!MESSAGE SQL Error [42601]: ERROR: syntax error at or near "as"
+  Position: 623
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-21 14:22:13.371
+!MESSAGE ERROR: syntax error at or near "as"
+  Position: 623
+!STACK 0
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "as"
+  Position: 623
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:290)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:131)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:582)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$1(SQLQueryJob.java:491)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:498)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:934)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4093)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:123)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:121)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5148)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:22:13.510
+!MESSAGE SQL Error [42601]: ERROR: syntax error at or near "as"
+  Position: 623
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-21 14:22:13.510
+!MESSAGE ERROR: syntax error at or near "as"
+  Position: 623
+!STACK 0
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "as"
+  Position: 623
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:290)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:131)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:582)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$1(SQLQueryJob.java:491)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:498)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:934)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4093)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:123)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:121)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5148)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:22:53.751
+!MESSAGE Error resolving object
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-21 14:22:53.751
+!MESSAGE Procedure 'getbesttrigrams' not found in schema 'public'
+!STACK 0
+org.jkiss.dbeaver.DBException: Procedure 'getbesttrigrams' not found in schema 'public'
+	at org.jkiss.dbeaver.ext.postgresql.model.PostgreStructureAssistant$2.resolveObject(PostgreStructureAssistant.java:273)
+	at org.jkiss.dbeaver.ui.editors.sql.dialogs.SuggestionInformationControl$1.run(SuggestionInformationControl.java:130)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:22:54.568
+!MESSAGE Error resolving procedure parameters
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-21 14:22:54.568
+!MESSAGE Procedure 'getbesttrigrams' not found in schema 'public'
+!STACK 0
+org.jkiss.dbeaver.DBException: Procedure 'getbesttrigrams' not found in schema 'public'
+	at org.jkiss.dbeaver.ext.postgresql.model.PostgreStructureAssistant$2.resolveObject(PostgreStructureAssistant.java:273)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionProposalBase.getExtraString(SQLCompletionProposalBase.java:212)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProposal.apply(SQLCompletionProposal.java:92)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProposal.apply(SQLCompletionProposal.java:174)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.insertProposal(CompletionProposalPopup.java:999)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.insertSelectedProposalWithMask(CompletionProposalPopup.java:951)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.verifyKey(CompletionProposalPopup.java:1398)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$InternalListener.verifyKey(ContentAssistant.java:828)
+	at org.eclipse.jface.text.TextViewer$VerifyKeyListenersManager.verifyKey(TextViewer.java:480)
+	at org.eclipse.swt.custom.StyledTextListener.handleEvent(StyledTextListener.java:70)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5855)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1529)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1555)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1538)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1316)
+	at org.eclipse.swt.custom.StyledText.handleKeyDown(StyledText.java:5742)
+	at org.eclipse.swt.custom.StyledText.lambda$28(StyledText.java:5426)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5855)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1529)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1555)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1538)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1577)
+	at org.eclipse.swt.widgets.Widget.gtk_key_press_event(Widget.java:937)
+	at org.eclipse.swt.widgets.Control.gtk_key_press_event(Control.java:4049)
+	at org.eclipse.swt.widgets.Composite.gtk_key_press_event(Composite.java:931)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:2507)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:6883)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:6163)
+	at org.eclipse.swt.internal.gtk3.GTK3.gtk_main_do_event(Native Method)
+	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1597)
+	at org.eclipse.swt.internal.gtk3.GTK3.gtk_main_iteration_do(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4514)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.jkiss.dbeaver.ui.app.standalone.DBeaverApplication.start(DBeaverApplication.java:280)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:23:23.812
+!MESSAGE SQL Error [42703]: ERROR: column gt.trigram does not exist
+  Hint: Perhaps you meant to reference the column "tcv.trigram".
+  Where: PL/pgSQL function getbesttrigrams(text) line 3 at RETURN QUERY
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-21 14:23:23.812
+!MESSAGE ERROR: column gt.trigram does not exist
+  Hint: Perhaps you meant to reference the column "tcv.trigram".
+  Where: PL/pgSQL function getbesttrigrams(text) line 3 at RETURN QUERY
+!STACK 0
+org.postgresql.util.PSQLException: ERROR: column gt.trigram does not exist
+  Hint: Perhaps you meant to reference the column "tcv.trigram".
+  Where: PL/pgSQL function getbesttrigrams(text) line 3 at RETURN QUERY
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:290)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:131)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:582)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$1(SQLQueryJob.java:491)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:498)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:934)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4093)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:123)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:121)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5148)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:25:12.608
+!MESSAGE SQL Error [42P01]: ERROR: missing FROM-clause entry for table "a"
+  Where: PL/pgSQL function getbesttrigrams(text) line 3 at RETURN QUERY
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-21 14:25:12.608
+!MESSAGE ERROR: missing FROM-clause entry for table "a"
+  Where: PL/pgSQL function getbesttrigrams(text) line 3 at RETURN QUERY
+!STACK 0
+org.postgresql.util.PSQLException: ERROR: missing FROM-clause entry for table "a"
+  Where: PL/pgSQL function getbesttrigrams(text) line 3 at RETURN QUERY
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:290)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:131)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:582)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$1(SQLQueryJob.java:491)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:498)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:934)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4093)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:123)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:121)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5148)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:44:16.435
+!MESSAGE Finding tables from CreateFunctionalStatement is not supported
+!STACK 0
+java.lang.UnsupportedOperationException: Finding tables from CreateFunctionalStatement is not supported
+	at net.sf.jsqlparser.util.TablesNamesFinder.visit(TablesNamesFinder.java:936)
+	at net.sf.jsqlparser.statement.CreateFunctionalStatement.accept(CreateFunctionalStatement.java:89)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1267)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1219)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromChildren(SQLCompletionAnalyzer.java:1134)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeDataSourceProposals(SQLCompletionAnalyzer.java:936)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:357)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:133)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:117)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:348)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:44:16.524
+!MESSAGE Finding tables from CreateFunctionalStatement is not supported
+!STACK 0
+java.lang.UnsupportedOperationException: Finding tables from CreateFunctionalStatement is not supported
+	at net.sf.jsqlparser.util.TablesNamesFinder.visit(TablesNamesFinder.java:936)
+	at net.sf.jsqlparser.statement.CreateFunctionalStatement.accept(CreateFunctionalStatement.java:89)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1267)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1219)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromChildren(SQLCompletionAnalyzer.java:1134)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeDataSourceProposals(SQLCompletionAnalyzer.java:936)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:357)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:133)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:117)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:348)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:44:16.652
+!MESSAGE Finding tables from CreateFunctionalStatement is not supported
+!STACK 0
+java.lang.UnsupportedOperationException: Finding tables from CreateFunctionalStatement is not supported
+	at net.sf.jsqlparser.util.TablesNamesFinder.visit(TablesNamesFinder.java:936)
+	at net.sf.jsqlparser.statement.CreateFunctionalStatement.accept(CreateFunctionalStatement.java:89)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1267)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1219)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromChildren(SQLCompletionAnalyzer.java:1134)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeDataSourceProposals(SQLCompletionAnalyzer.java:936)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:357)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:133)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:117)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:348)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:44:16.842
+!MESSAGE Finding tables from CreateFunctionalStatement is not supported
+!STACK 0
+java.lang.UnsupportedOperationException: Finding tables from CreateFunctionalStatement is not supported
+	at net.sf.jsqlparser.util.TablesNamesFinder.visit(TablesNamesFinder.java:936)
+	at net.sf.jsqlparser.statement.CreateFunctionalStatement.accept(CreateFunctionalStatement.java:89)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1267)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1219)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromChildren(SQLCompletionAnalyzer.java:1134)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeDataSourceProposals(SQLCompletionAnalyzer.java:936)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:357)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:133)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:117)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:348)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:44:16.935
+!MESSAGE Finding tables from CreateFunctionalStatement is not supported
+!STACK 0
+java.lang.UnsupportedOperationException: Finding tables from CreateFunctionalStatement is not supported
+	at net.sf.jsqlparser.util.TablesNamesFinder.visit(TablesNamesFinder.java:936)
+	at net.sf.jsqlparser.statement.CreateFunctionalStatement.accept(CreateFunctionalStatement.java:89)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1267)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1219)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromChildren(SQLCompletionAnalyzer.java:1134)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeDataSourceProposals(SQLCompletionAnalyzer.java:936)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:357)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:133)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:117)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:348)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:44:16.999
+!MESSAGE Finding tables from CreateFunctionalStatement is not supported
+!STACK 0
+java.lang.UnsupportedOperationException: Finding tables from CreateFunctionalStatement is not supported
+	at net.sf.jsqlparser.util.TablesNamesFinder.visit(TablesNamesFinder.java:936)
+	at net.sf.jsqlparser.statement.CreateFunctionalStatement.accept(CreateFunctionalStatement.java:89)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1267)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1219)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromChildren(SQLCompletionAnalyzer.java:1134)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeDataSourceProposals(SQLCompletionAnalyzer.java:936)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:357)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:133)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:117)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:348)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:44:23.660
+!MESSAGE SQL Error [42P01]: ERROR: missing FROM-clause entry for table "a"
+  Where: PL/pgSQL function getbesttrigrams(text) line 3 at RETURN QUERY
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-21 14:44:23.660
+!MESSAGE ERROR: missing FROM-clause entry for table "a"
+  Where: PL/pgSQL function getbesttrigrams(text) line 3 at RETURN QUERY
+!STACK 0
+org.postgresql.util.PSQLException: ERROR: missing FROM-clause entry for table "a"
+  Where: PL/pgSQL function getbesttrigrams(text) line 3 at RETURN QUERY
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:290)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:131)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:582)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$1(SQLQueryJob.java:491)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:498)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:934)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4093)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:123)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:121)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5148)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:48:15.512
+!MESSAGE SQL Error [42703]: ERROR: column "string" does not exist
+  Position: 389
+
+Error position: line: 14 pos: 388
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-21 14:48:15.512
+!MESSAGE SQL Error [42703]: ERROR: column "string" does not exist
+  Position: 389
+!SUBENTRY 2 org.jkiss.dbeaver.model 4 0 2023-10-21 14:48:15.512
+!MESSAGE ERROR: column "string" does not exist
+  Position: 389
+!STACK 0
+org.postgresql.util.PSQLException: ERROR: column "string" does not exist
+  Position: 389
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:290)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:131)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:582)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$1(SQLQueryJob.java:491)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:498)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:934)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4093)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:123)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:121)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5148)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:48:26.971
+!MESSAGE SQL Error [42P01]: ERROR: missing FROM-clause entry for table "a"
+  Position: 234
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-21 14:48:26.971
+!MESSAGE ERROR: missing FROM-clause entry for table "a"
+  Position: 234
+!STACK 0
+org.postgresql.util.PSQLException: ERROR: missing FROM-clause entry for table "a"
+  Position: 234
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:290)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:131)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:582)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$1(SQLQueryJob.java:491)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:498)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:934)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4093)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:123)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:121)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5148)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 14:55:37.404
+!MESSAGE SQL Error [42703]: ERROR: column "trgm1" does not exist
+  Position: 12
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-21 14:55:37.405
+!MESSAGE ERROR: column "trgm1" does not exist
+  Position: 12
+!STACK 0
+org.postgresql.util.PSQLException: ERROR: column "trgm1" does not exist
+  Position: 12
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:290)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:131)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:582)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$1(SQLQueryJob.java:491)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:498)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:934)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4093)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:123)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:121)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5148)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 15:00:38.134
+!MESSAGE Finding tables from CreateFunctionalStatement is not supported
+!STACK 0
+java.lang.UnsupportedOperationException: Finding tables from CreateFunctionalStatement is not supported
+	at net.sf.jsqlparser.util.TablesNamesFinder.visit(TablesNamesFinder.java:936)
+	at net.sf.jsqlparser.statement.CreateFunctionalStatement.accept(CreateFunctionalStatement.java:89)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1267)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1219)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromChildren(SQLCompletionAnalyzer.java:1134)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeDataSourceProposals(SQLCompletionAnalyzer.java:936)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:357)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:133)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:117)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:348)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 15:00:38.209
+!MESSAGE Finding tables from CreateFunctionalStatement is not supported
+!STACK 0
+java.lang.UnsupportedOperationException: Finding tables from CreateFunctionalStatement is not supported
+	at net.sf.jsqlparser.util.TablesNamesFinder.visit(TablesNamesFinder.java:936)
+	at net.sf.jsqlparser.statement.CreateFunctionalStatement.accept(CreateFunctionalStatement.java:89)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1267)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1219)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromChildren(SQLCompletionAnalyzer.java:1134)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeDataSourceProposals(SQLCompletionAnalyzer.java:936)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:357)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:133)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:117)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:348)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 15:00:38.305
+!MESSAGE Finding tables from CreateFunctionalStatement is not supported
+!STACK 0
+java.lang.UnsupportedOperationException: Finding tables from CreateFunctionalStatement is not supported
+	at net.sf.jsqlparser.util.TablesNamesFinder.visit(TablesNamesFinder.java:936)
+	at net.sf.jsqlparser.statement.CreateFunctionalStatement.accept(CreateFunctionalStatement.java:89)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1267)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1219)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromChildren(SQLCompletionAnalyzer.java:1134)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeDataSourceProposals(SQLCompletionAnalyzer.java:936)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:357)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:133)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:117)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:348)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 15:00:38.390
+!MESSAGE Finding tables from CreateFunctionalStatement is not supported
+!STACK 0
+java.lang.UnsupportedOperationException: Finding tables from CreateFunctionalStatement is not supported
+	at net.sf.jsqlparser.util.TablesNamesFinder.visit(TablesNamesFinder.java:936)
+	at net.sf.jsqlparser.statement.CreateFunctionalStatement.accept(CreateFunctionalStatement.java:89)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1267)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1219)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromChildren(SQLCompletionAnalyzer.java:1134)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeDataSourceProposals(SQLCompletionAnalyzer.java:936)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:357)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:133)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:117)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:348)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 15:00:38.492
+!MESSAGE Finding tables from CreateFunctionalStatement is not supported
+!STACK 0
+java.lang.UnsupportedOperationException: Finding tables from CreateFunctionalStatement is not supported
+	at net.sf.jsqlparser.util.TablesNamesFinder.visit(TablesNamesFinder.java:936)
+	at net.sf.jsqlparser.statement.CreateFunctionalStatement.accept(CreateFunctionalStatement.java:89)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1267)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1219)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromChildren(SQLCompletionAnalyzer.java:1134)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeDataSourceProposals(SQLCompletionAnalyzer.java:936)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:357)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:133)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:117)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:348)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 15:00:38.545
+!MESSAGE Finding tables from CreateFunctionalStatement is not supported
+!STACK 0
+java.lang.UnsupportedOperationException: Finding tables from CreateFunctionalStatement is not supported
+	at net.sf.jsqlparser.util.TablesNamesFinder.visit(TablesNamesFinder.java:936)
+	at net.sf.jsqlparser.statement.CreateFunctionalStatement.accept(CreateFunctionalStatement.java:89)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1267)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1219)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromChildren(SQLCompletionAnalyzer.java:1134)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeDataSourceProposals(SQLCompletionAnalyzer.java:936)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:357)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:133)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:117)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:348)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-21 15:00:43.328
+!MESSAGE SQL Error [42P01]: ERROR: missing FROM-clause entry for table "a"
+  Where: PL/pgSQL function getbesttrigrams(text) line 3 at RETURN QUERY
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-21 15:00:43.328
+!MESSAGE ERROR: missing FROM-clause entry for table "a"
+  Where: PL/pgSQL function getbesttrigrams(text) line 3 at RETURN QUERY
+!STACK 0
+org.postgresql.util.PSQLException: ERROR: missing FROM-clause entry for table "a"
+  Where: PL/pgSQL function getbesttrigrams(text) line 3 at RETURN QUERY
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:290)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:131)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:582)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$1(SQLQueryJob.java:491)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:498)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:934)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4093)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:123)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:121)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5148)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2023-10-22 10:56:36.888 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=21
+java.vendor=N/A
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_GB
+Framework arguments:  -eclipse.keyring /home/duc/.local/share/DBeaverData/secure/secure_storage
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2023-10-22 10:56:37.667
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-22 10:56:37.805
+!MESSAGE Error accessing instance server: java.net.ConnectException
+
+!ENTRY org.eclipse.ui 2 2 2023-10-22 10:56:39.038
+!MESSAGE Invalid preference category path: org.eclipse.debug.ui.ConsolePreferencePage (bundle: org.eclipse.ui.console, page: org.eclipse.ui.internal.console.ansi.preferences.AnsiConsolePreferencePage)
+
+!ENTRY org.eclipse.jface 2 0 2023-10-22 10:56:39.231
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-10-22 10:56:39.231
+!MESSAGE A conflict occurred for CTRL+J:
+Binding(CTRL+J,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.findIncremental,Incremental Find,
+		Incremental find,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.findIncremental"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+J,
+	ParameterizedCommand(Command(org.jkiss.dbeaver.core.resultset.grid.gotoColumn,Go To Column,
+		Jump to a specified column,
+		Category(org.jkiss.dbeaver.core.rs,Result Set,Result Set Commands,true),
+		WorkbenchHandlerServiceHandler("org.jkiss.dbeaver.core.resultset.grid.gotoColumn"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.jkiss.dbeaver.ui.context.resultset,,,system)
+!SESSION 2023-10-22 10:56:48.344 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=21
+java.vendor=N/A
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_GB
+Framework arguments:  -eclipse.keyring /home/duc/.local/share/DBeaverData/secure/secure_storage
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.ui 2 2 2023-10-22 10:56:50.136
+!MESSAGE Invalid preference category path: org.eclipse.debug.ui.ConsolePreferencePage (bundle: org.eclipse.ui.console, page: org.eclipse.ui.internal.console.ansi.preferences.AnsiConsolePreferencePage)
+
+!ENTRY org.eclipse.jface 2 0 2023-10-22 10:56:50.227
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-10-22 10:56:50.227
+!MESSAGE A conflict occurred for CTRL+J:
+Binding(CTRL+J,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.findIncremental,Incremental Find,
+		Incremental find,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.findIncremental"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+J,
+	ParameterizedCommand(Command(org.jkiss.dbeaver.core.resultset.grid.gotoColumn,Go To Column,
+		Jump to a specified column,
+		Category(org.jkiss.dbeaver.core.rs,Result Set,Result Set Commands,true),
+		WorkbenchHandlerServiceHandler("org.jkiss.dbeaver.core.resultset.grid.gotoColumn"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.jkiss.dbeaver.ui.context.resultset,,,system)
+!SESSION 2023-10-23 10:12:27.459 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=21
+java.vendor=N/A
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_GB
+Framework arguments:  -eclipse.keyring /home/duc/.local/share/DBeaverData/secure/secure_storage
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-23 10:12:28.410
+!MESSAGE Error accessing instance server: java.net.ConnectException
+
+!ENTRY org.eclipse.ui 2 2 2023-10-23 10:12:29.591
+!MESSAGE Invalid preference category path: org.eclipse.debug.ui.ConsolePreferencePage (bundle: org.eclipse.ui.console, page: org.eclipse.ui.internal.console.ansi.preferences.AnsiConsolePreferencePage)
+
+!ENTRY org.eclipse.jface 2 0 2023-10-23 10:12:30.061
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-10-23 10:12:30.061
+!MESSAGE A conflict occurred for CTRL+J:
+Binding(CTRL+J,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.findIncremental,Incremental Find,
+		Incremental find,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.findIncremental"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+J,
+	ParameterizedCommand(Command(org.jkiss.dbeaver.core.resultset.grid.gotoColumn,Go To Column,
+		Jump to a specified column,
+		Category(org.jkiss.dbeaver.core.rs,Result Set,Result Set Commands,true),
+		WorkbenchHandlerServiceHandler("org.jkiss.dbeaver.core.resultset.grid.gotoColumn"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.jkiss.dbeaver.ui.context.resultset,,,system)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-23 14:14:06.444
+!MESSAGE Finding tables from CreateFunctionalStatement is not supported
+!STACK 0
+java.lang.UnsupportedOperationException: Finding tables from CreateFunctionalStatement is not supported
+	at net.sf.jsqlparser.util.TablesNamesFinder.visit(TablesNamesFinder.java:936)
+	at net.sf.jsqlparser.statement.CreateFunctionalStatement.accept(CreateFunctionalStatement.java:89)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1267)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1219)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromChildren(SQLCompletionAnalyzer.java:1134)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeDataSourceProposals(SQLCompletionAnalyzer.java:936)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:357)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:133)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:117)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:348)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-23 14:14:06.504
+!MESSAGE Finding tables from CreateFunctionalStatement is not supported
+!STACK 0
+java.lang.UnsupportedOperationException: Finding tables from CreateFunctionalStatement is not supported
+	at net.sf.jsqlparser.util.TablesNamesFinder.visit(TablesNamesFinder.java:936)
+	at net.sf.jsqlparser.statement.CreateFunctionalStatement.accept(CreateFunctionalStatement.java:89)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1267)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1219)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromChildren(SQLCompletionAnalyzer.java:1134)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeDataSourceProposals(SQLCompletionAnalyzer.java:936)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:357)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:133)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:117)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:348)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-23 15:03:22.351
+!MESSAGE Finding tables from CreateFunctionalStatement is not supported
+!STACK 0
+java.lang.UnsupportedOperationException: Finding tables from CreateFunctionalStatement is not supported
+	at net.sf.jsqlparser.util.TablesNamesFinder.visit(TablesNamesFinder.java:936)
+	at net.sf.jsqlparser.statement.CreateFunctionalStatement.accept(CreateFunctionalStatement.java:89)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1267)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1219)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromChildren(SQLCompletionAnalyzer.java:1134)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeDataSourceProposals(SQLCompletionAnalyzer.java:936)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:357)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:133)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:117)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:348)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-23 15:03:22.426
+!MESSAGE Finding tables from CreateFunctionalStatement is not supported
+!STACK 0
+java.lang.UnsupportedOperationException: Finding tables from CreateFunctionalStatement is not supported
+	at net.sf.jsqlparser.util.TablesNamesFinder.visit(TablesNamesFinder.java:936)
+	at net.sf.jsqlparser.statement.CreateFunctionalStatement.accept(CreateFunctionalStatement.java:89)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1267)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1219)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromChildren(SQLCompletionAnalyzer.java:1134)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeDataSourceProposals(SQLCompletionAnalyzer.java:936)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:357)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:133)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:117)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:348)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-23 15:03:23.096
+!MESSAGE Finding tables from CreateFunctionalStatement is not supported
+!STACK 0
+java.lang.UnsupportedOperationException: Finding tables from CreateFunctionalStatement is not supported
+	at net.sf.jsqlparser.util.TablesNamesFinder.visit(TablesNamesFinder.java:936)
+	at net.sf.jsqlparser.statement.CreateFunctionalStatement.accept(CreateFunctionalStatement.java:89)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1267)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1219)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromChildren(SQLCompletionAnalyzer.java:1134)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeDataSourceProposals(SQLCompletionAnalyzer.java:936)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:357)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:133)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:117)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:348)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-23 15:03:23.201
+!MESSAGE Finding tables from CreateFunctionalStatement is not supported
+!STACK 0
+java.lang.UnsupportedOperationException: Finding tables from CreateFunctionalStatement is not supported
+	at net.sf.jsqlparser.util.TablesNamesFinder.visit(TablesNamesFinder.java:936)
+	at net.sf.jsqlparser.statement.CreateFunctionalStatement.accept(CreateFunctionalStatement.java:89)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1267)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1219)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromChildren(SQLCompletionAnalyzer.java:1134)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeDataSourceProposals(SQLCompletionAnalyzer.java:936)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:357)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:133)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:117)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:348)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-23 15:03:23.342
+!MESSAGE Finding tables from CreateFunctionalStatement is not supported
+!STACK 0
+java.lang.UnsupportedOperationException: Finding tables from CreateFunctionalStatement is not supported
+	at net.sf.jsqlparser.util.TablesNamesFinder.visit(TablesNamesFinder.java:936)
+	at net.sf.jsqlparser.statement.CreateFunctionalStatement.accept(CreateFunctionalStatement.java:89)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1267)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1219)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromChildren(SQLCompletionAnalyzer.java:1134)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeDataSourceProposals(SQLCompletionAnalyzer.java:936)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:357)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:133)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:117)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:348)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-23 15:03:23.409
+!MESSAGE Finding tables from CreateFunctionalStatement is not supported
+!STACK 0
+java.lang.UnsupportedOperationException: Finding tables from CreateFunctionalStatement is not supported
+	at net.sf.jsqlparser.util.TablesNamesFinder.visit(TablesNamesFinder.java:936)
+	at net.sf.jsqlparser.statement.CreateFunctionalStatement.accept(CreateFunctionalStatement.java:89)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1267)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1219)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromChildren(SQLCompletionAnalyzer.java:1134)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeDataSourceProposals(SQLCompletionAnalyzer.java:936)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:357)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:133)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:117)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:348)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-23 15:03:23.501
+!MESSAGE Finding tables from CreateFunctionalStatement is not supported
+!STACK 0
+java.lang.UnsupportedOperationException: Finding tables from CreateFunctionalStatement is not supported
+	at net.sf.jsqlparser.util.TablesNamesFinder.visit(TablesNamesFinder.java:936)
+	at net.sf.jsqlparser.statement.CreateFunctionalStatement.accept(CreateFunctionalStatement.java:89)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1267)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1219)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromChildren(SQLCompletionAnalyzer.java:1134)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeDataSourceProposals(SQLCompletionAnalyzer.java:936)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:357)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:133)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:117)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:348)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-23 15:03:23.615
+!MESSAGE Finding tables from CreateFunctionalStatement is not supported
+!STACK 0
+java.lang.UnsupportedOperationException: Finding tables from CreateFunctionalStatement is not supported
+	at net.sf.jsqlparser.util.TablesNamesFinder.visit(TablesNamesFinder.java:936)
+	at net.sf.jsqlparser.statement.CreateFunctionalStatement.accept(CreateFunctionalStatement.java:89)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1267)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1219)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromChildren(SQLCompletionAnalyzer.java:1134)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeDataSourceProposals(SQLCompletionAnalyzer.java:936)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:357)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:133)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:117)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:348)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-23 15:39:10.127
+!MESSAGE SQL Error [42601]: ERROR: syntax error at or near "table"
+  Position: 182
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-23 15:39:10.127
+!MESSAGE ERROR: syntax error at or near "table"
+  Position: 182
+!STACK 0
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "table"
+  Position: 182
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:290)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:131)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:582)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$1(SQLQueryJob.java:491)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:498)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:934)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4093)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:123)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:121)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5148)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-23 15:53:13.278
+!MESSAGE SQL Error [42601]: ERROR: syntax error at or near "$function$
+	begin
+		if trgm1 is not null
+			if trgm2 is not null
+				if trgm3 is not null
+					-- 3 available trigrams
+					return query as 
+						select id from trigrams t1 where t1.trigram = trgm1
+						intersect 
+						select id from trigrams t2 where t2.trigram = trgm2
+						intersect
+						select id from trigrams t3 where t3.trigram = trgm3
+				end if;
+				-- 2 available trigrams
+					return query as 
+						select id from trigrams t1 where t1.trigram = trgm1
+						intersect 
+						select id from trigrams t2 where t2.trigram = trgm2
+		
+			end if;
+			-- 1 available trigram
+			return query as 
+				select id from trigrams t1 where t1.trigram = trm1
+		end if;
+	end;
+$function$"
+  Position: 219
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-23 15:53:13.278
+!MESSAGE ERROR: syntax error at or near "$function$
+	begin
+		if trgm1 is not null
+			if trgm2 is not null
+				if trgm3 is not null
+					-- 3 available trigrams
+					return query as 
+						select id from trigrams t1 where t1.trigram = trgm1
+						intersect 
+						select id from trigrams t2 where t2.trigram = trgm2
+						intersect
+						select id from trigrams t3 where t3.trigram = trgm3
+				end if;
+				-- 2 available trigrams
+					return query as 
+						select id from trigrams t1 where t1.trigram = trgm1
+						intersect 
+						select id from trigrams t2 where t2.trigram = trgm2
+		
+			end if;
+			-- 1 available trigram
+			return query as 
+				select id from trigrams t1 where t1.trigram = trm1
+		end if;
+	end;
+$function$"
+  Position: 219
+!STACK 0
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "$function$
+	begin
+		if trgm1 is not null
+			if trgm2 is not null
+				if trgm3 is not null
+					-- 3 available trigrams
+					return query as 
+						select id from trigrams t1 where t1.trigram = trgm1
+						intersect 
+						select id from trigrams t2 where t2.trigram = trgm2
+						intersect
+						select id from trigrams t3 where t3.trigram = trgm3
+				end if;
+				-- 2 available trigrams
+					return query as 
+						select id from trigrams t1 where t1.trigram = trgm1
+						intersect 
+						select id from trigrams t2 where t2.trigram = trgm2
+		
+			end if;
+			-- 1 available trigram
+			return query as 
+				select id from trigrams t1 where t1.trigram = trm1
+		end if;
+	end;
+$function$"
+  Position: 219
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:290)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:131)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:582)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$1(SQLQueryJob.java:491)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:498)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:934)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4093)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:123)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:121)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5148)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-23 15:53:21.441
+!MESSAGE SQL Error [42601]: ERROR: syntax error at or near "$function$
+	begin
+		if trgm1 is not null
+			if trgm2 is not null
+				if trgm3 is not null
+					-- 3 available trigrams
+					return query as 
+						select id from trigrams t1 where t1.trigram = trgm1
+						intersect 
+						select id from trigrams t2 where t2.trigram = trgm2
+						intersect
+						select id from trigrams t3 where t3.trigram = trgm3
+				end if;
+				-- 2 available trigrams
+					return query as 
+						select id from trigrams t1 where t1.trigram = trgm1
+						intersect 
+						select id from trigrams t2 where t2.trigram = trgm2
+		
+			end if;
+			-- 1 available trigram
+			return query as 
+				select id from trigrams t1 where t1.trigram = trm1
+		end if;
+	end;
+$function$"
+  Position: 219
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-23 15:53:21.441
+!MESSAGE ERROR: syntax error at or near "$function$
+	begin
+		if trgm1 is not null
+			if trgm2 is not null
+				if trgm3 is not null
+					-- 3 available trigrams
+					return query as 
+						select id from trigrams t1 where t1.trigram = trgm1
+						intersect 
+						select id from trigrams t2 where t2.trigram = trgm2
+						intersect
+						select id from trigrams t3 where t3.trigram = trgm3
+				end if;
+				-- 2 available trigrams
+					return query as 
+						select id from trigrams t1 where t1.trigram = trgm1
+						intersect 
+						select id from trigrams t2 where t2.trigram = trgm2
+		
+			end if;
+			-- 1 available trigram
+			return query as 
+				select id from trigrams t1 where t1.trigram = trm1
+		end if;
+	end;
+$function$"
+  Position: 219
+!STACK 0
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "$function$
+	begin
+		if trgm1 is not null
+			if trgm2 is not null
+				if trgm3 is not null
+					-- 3 available trigrams
+					return query as 
+						select id from trigrams t1 where t1.trigram = trgm1
+						intersect 
+						select id from trigrams t2 where t2.trigram = trgm2
+						intersect
+						select id from trigrams t3 where t3.trigram = trgm3
+				end if;
+				-- 2 available trigrams
+					return query as 
+						select id from trigrams t1 where t1.trigram = trgm1
+						intersect 
+						select id from trigrams t2 where t2.trigram = trgm2
+		
+			end if;
+			-- 1 available trigram
+			return query as 
+				select id from trigrams t1 where t1.trigram = trm1
+		end if;
+	end;
+$function$"
+  Position: 219
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:290)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:131)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:582)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$1(SQLQueryJob.java:491)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:498)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:934)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4093)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:123)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:121)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5148)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-23 15:54:15.180
+!MESSAGE SQL Error [42601]: ERROR: missing "THEN" at end of SQL expression
+  Position: 581
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-23 15:54:15.181
+!MESSAGE ERROR: missing "THEN" at end of SQL expression
+  Position: 581
+!STACK 0
+org.postgresql.util.PSQLException: ERROR: missing "THEN" at end of SQL expression
+  Position: 581
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:290)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:131)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:582)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$1(SQLQueryJob.java:491)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:498)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:934)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4093)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:123)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:121)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5148)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-23 15:54:33.192
+!MESSAGE SQL Error [42601]: ERROR: syntax error at or near "as"
+  Position: 375
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-23 15:54:33.192
+!MESSAGE ERROR: syntax error at or near "as"
+  Position: 375
+!STACK 0
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "as"
+  Position: 375
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:290)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:131)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:582)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$1(SQLQueryJob.java:491)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:498)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:934)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4093)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:123)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:121)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5148)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-23 15:57:03.478
+!MESSAGE SQL Error [42601]: ERROR: syntax error at or near "end"
+  Position: 587
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-23 15:57:03.478
+!MESSAGE ERROR: syntax error at or near "end"
+  Position: 587
+!STACK 0
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "end"
+  Position: 587
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:290)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:131)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:582)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$1(SQLQueryJob.java:491)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:498)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:934)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4093)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:123)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:121)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5148)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-23 20:21:07.934
+!MESSAGE SQL Error [42601]: ERROR: syntax error at or near "@"
+  Position: 67
+
+Error position: line: 2 pos: 66
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-23 20:21:07.934
+!MESSAGE SQL Error [42601]: ERROR: syntax error at or near "@"
+  Position: 67
+!SUBENTRY 2 org.jkiss.dbeaver.model 4 0 2023-10-23 20:21:07.934
+!MESSAGE ERROR: syntax error at or near "@"
+  Position: 67
+!STACK 0
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "@"
+  Position: 67
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:290)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:131)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:582)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$1(SQLQueryJob.java:491)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:498)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:934)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4093)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:123)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:121)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5148)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-23 20:21:12.415
+!MESSAGE SQL Error [42601]: ERROR: syntax error at or near "language"
+  Position: 100
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-23 20:21:12.415
+!MESSAGE ERROR: syntax error at or near "language"
+  Position: 100
+!STACK 0
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "language"
+  Position: 100
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:290)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:131)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:582)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$1(SQLQueryJob.java:491)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:498)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:934)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4093)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:123)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:121)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5148)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-23 20:22:40.783
+!MESSAGE SQL Error [42601]: ERROR: syntax error at or near "lateral"
+  Position: 234
+
+Error position: line: 11 pos: 233
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-23 20:22:40.783
+!MESSAGE SQL Error [42601]: ERROR: syntax error at or near "lateral"
+  Position: 234
+!SUBENTRY 2 org.jkiss.dbeaver.model 4 0 2023-10-23 20:22:40.783
+!MESSAGE ERROR: syntax error at or near "lateral"
+  Position: 234
+!STACK 0
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "lateral"
+  Position: 234
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:290)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:131)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:582)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$1(SQLQueryJob.java:491)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:498)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:934)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4093)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:123)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:121)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5148)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2023-10-23 20:23:03.708
+!MESSAGE SQL Error [42601]: ERROR: syntax error at or near "lateral"
+  Position: 231
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2023-10-23 20:23:03.708
+!MESSAGE ERROR: syntax error at or near "lateral"
+  Position: 231
+!STACK 0
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "lateral"
+  Position: 231
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:290)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:131)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:582)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$1(SQLQueryJob.java:491)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:498)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:934)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:4093)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:123)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:190)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:121)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:5148)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)

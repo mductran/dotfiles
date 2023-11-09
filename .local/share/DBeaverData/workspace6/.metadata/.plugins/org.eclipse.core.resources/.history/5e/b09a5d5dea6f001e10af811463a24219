@@ -1,0 +1,1 @@
+select trgm1, trgm2, trgm3 from getbesttrigrams('%ddb9f8ab0e51e6f47611%');

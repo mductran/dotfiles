@@ -1,0 +1,25 @@
+-- retrieve from trigram tables all rows that match values retrived from getBestTrigram()
+create or replace function getMatchingTrigramId(trgm1 text, trgm2 text, trgm3 text)
+return table (id integer)
+language plpgsql
+$function$
+	begin
+		if trgm1 is not null
+			if trgm2 is not null
+				if trgm3 is not null
+					-- 3 available trigrams
+					select id1 from trigrams t1 where t1.trigram = trgm1
+					intersect 
+					select id2 from trigrams t2 where t2.trigram = trgm2
+					intersect
+					select id3 from trigrams t3 where t3.trigram = trgm3
+				end if;
+				
+				-- 2 available trigrams
+			
+			end if;
+		
+			-- 1 available trigram
+		end if;
+	end;
+$function$;

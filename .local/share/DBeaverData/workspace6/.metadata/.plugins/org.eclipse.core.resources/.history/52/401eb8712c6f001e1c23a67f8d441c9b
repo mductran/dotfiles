@@ -1,0 +1,10 @@
+create extension pg_trgm;
+
+create table if not exists Trigrams as (
+select
+	*
+from
+	bstrings20,
+	lateral unnest(show_trgm(bstrings20.phash)) as trgm
+where
+	length(trim(trgm)) = 3);

@@ -1,0 +1,1 @@
+explain select phash, trigram from bstrings, generatetrigram(bstrings.phash); 

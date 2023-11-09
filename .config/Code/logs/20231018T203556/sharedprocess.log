@@ -1,0 +1,28 @@
+2023-10-18 20:37:52.669 [info] Getting Manifest... adpyke.vscode-sql-formatter
+2023-10-18 20:37:52.673 [info] Installing extension: adpyke.vscode-sql-formatter
+2023-10-18 20:37:53.522 [warning] Extension signature verification failed with error 'UnknownError': adpyke.vscode-sql-formatter
+2023-10-18 20:37:53.893 [info] Extracted extension to file:///home/duc/.vscode/extensions/adpyke.vscode-sql-formatter-1.4.4: adpyke.vscode-sql-formatter
+2023-10-18 20:37:53.895 [info] Renamed to /home/duc/.vscode/extensions/adpyke.vscode-sql-formatter-1.4.4
+2023-10-18 20:37:53.896 [info] Extracting extension completed. adpyke.vscode-sql-formatter
+2023-10-18 20:37:53.899 [info] Extension installed successfully: adpyke.vscode-sql-formatter
+2023-10-18 20:37:53.978 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/duc/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/duc/.vscode/extensions/extensions.json.vsctmp'
+    at s.create (/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30209)
+    at i (/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30329)
+    at t.fb (/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:35755)
+    at t.stat (/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:28201)
+    at async w.stat (/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:15579)
+    at async Q.tb (/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:109:9514)
+2023-10-18 20:38:05.767 [info] Getting Manifest... esbenp.prettier-vscode
+2023-10-18 20:38:05.771 [info] Installing extension: esbenp.prettier-vscode
+2023-10-18 20:38:06.531 [warning] Extension signature verification failed with error 'UnknownError': esbenp.prettier-vscode
+2023-10-18 20:38:06.574 [info] Extracted extension to file:///home/duc/.vscode/extensions/esbenp.prettier-vscode-10.1.0: esbenp.prettier-vscode
+2023-10-18 20:38:06.575 [info] Renamed to /home/duc/.vscode/extensions/esbenp.prettier-vscode-10.1.0
+2023-10-18 20:38:06.576 [info] Extracting extension completed. esbenp.prettier-vscode
+2023-10-18 20:38:06.579 [info] Extension installed successfully: esbenp.prettier-vscode
+2023-10-18 20:38:06.653 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/duc/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/duc/.vscode/extensions/extensions.json.vsctmp'
+    at s.create (/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30209)
+    at i (/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30329)
+    at t.fb (/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:35755)
+    at t.stat (/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:28201)
+    at async w.stat (/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:15579)
+    at async Q.tb (/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:109:9514)

@@ -1,0 +1,755 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///home/duc/Downloads" added="2023-10-16T04:38:37.841846Z" modified="2023-11-09T03:16:41.683447Z" visited="2023-10-16T04:38:37.841848Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-11-09T03:16:41.683444Z" count="19"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/Desktop" added="2023-10-16T04:38:39.963511Z" modified="2023-11-06T15:33:49.802026Z" visited="2023-10-16T04:38:39.963512Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-11-06T15:33:49.802023Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc" added="2023-10-16T04:38:40.471362Z" modified="2023-11-09T03:17:11.076641Z" visited="2023-10-16T04:38:40.471363Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-11-09T03:17:11.076637Z" count="16"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/Pictures" added="2023-10-16T04:44:25.019510Z" modified="2023-11-09T03:16:44.522031Z" visited="2023-10-16T04:44:25.019512Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-11-09T03:16:44.522028Z" count="8"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/Pictures/wallpaper/rosepinedawn-pastel.png" added="2023-10-16T04:53:37.979486Z" modified="2023-10-16T06:55:52.282008Z" visited="2023-10-16T04:53:37.979487Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2023-10-16T04:53:38.296566Z" count="2"/>
+          <bookmark:application name="Thunar" exec="&apos;Thunar %u&apos;" modified="2023-10-16T06:55:52.282006Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/Pictures/wallpaper/JetBrainsMono.zip" added="2023-10-16T05:16:18.359971Z" modified="2023-10-16T05:16:36.140000Z" visited="2023-10-16T05:16:36.140000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2023-10-16T05:16:23.490954Z" count="2"/>
+          <bookmark:application name="" exec="dolphin %u" modified="2023-10-16T05:16:36.140000Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/Music" added="2023-10-16T05:18:33.146338Z" modified="2023-11-09T03:16:43.287443Z" visited="2023-10-16T05:18:33.146339Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-11-09T03:16:43.287440Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/Downloads/JetBrainsMono.zip" added="2023-10-16T05:23:22.341889Z" modified="2023-10-24T17:14:25.293205Z" visited="2023-10-16T05:23:22.341891Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2023-10-24T17:14:25.293199Z" count="4"/>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-10-16T05:27:16.549646Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/Pictures/wallpaper/Lofi%20room_LIVELY.zip" added="2023-10-16T06:55:02.358393Z" modified="2023-10-16T06:55:36.663061Z" visited="2023-10-16T06:55:02.358395Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2023-10-16T06:55:36.663056Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/Downloads/rose-pine-moon.zip" added="2023-10-16T06:56:06.433548Z" modified="2023-10-16T06:56:07.003249Z" visited="2023-10-16T06:56:06.433550Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2023-10-16T06:56:07.003245Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/.icons" added="2023-10-16T06:57:17.829672Z" modified="2023-10-16T07:34:50.328838Z" visited="2023-10-16T06:57:17.829673Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;Thunar %u&apos;" modified="2023-10-16T07:34:50.328835Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/Downloads/JetBrainsMono" added="2023-10-16T06:57:34.905255Z" modified="2023-10-16T07:33:10.967742Z" visited="2023-10-16T06:57:34.905257Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;Thunar %u&apos;" modified="2023-10-16T07:33:10.967739Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/.fonts" added="2023-10-16T07:33:29.927894Z" modified="2023-10-24T17:16:17.821493Z" visited="2023-10-16T07:33:29.927895Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;Thunar %u&apos;" modified="2023-10-24T17:16:17.821490Z" count="6"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/Downloads/Rose-Pine-Moon" added="2023-10-16T07:34:41.772394Z" modified="2023-10-16T07:34:46.258220Z" visited="2023-10-16T07:34:41.772395Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;Thunar %u&apos;" modified="2023-10-16T07:34:46.258217Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///" added="2023-10-16T07:35:17.995194Z" modified="2023-10-23T08:14:31.285288Z" visited="2023-10-16T07:35:17.995195Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-10-23T08:14:31.285285Z" count="5"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/Downloads/code.tar.gz" added="2023-10-16T08:19:40.259640Z" modified="2023-10-16T08:31:49.845291Z" visited="2023-10-16T08:19:40.259643Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-compressed-tar"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2023-10-16T08:31:49.845283Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/code.tar.gz" added="2023-10-16T08:41:23.957331Z" modified="2023-10-16T08:41:23.957338Z" visited="2023-10-16T08:41:23.957332Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-compressed-tar"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-10-16T08:41:23.957335Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/code/go_bk" added="2023-10-16T15:32:10.059277Z" modified="2023-10-19T16:26:22.272928Z" visited="2023-10-16T15:32:10.059279Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2023-10-16T15:32:10.059281Z" count="1"/>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-10-19T16:26:22.272925Z" count="5"/>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2023-10-18T14:22:51.027873Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/Pictures/277110154_2920385861441111_2155156860782590825_n.jpg" added="2023-10-17T03:54:58.049691Z" modified="2023-10-17T03:56:19.944299Z" visited="2023-10-17T03:54:58.049693Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2023-10-17T03:56:19.944297Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/Downloads/Attachment%202%20-%20NGrams%20Performance%20Tests.sql" added="2023-10-18T04:56:59.682519Z" modified="2023-10-18T04:56:59.971305Z" visited="2023-10-18T04:56:59.682523Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/sql"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2023-10-18T04:56:59.971300Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/generateTrigram.sql" added="2023-10-18T13:51:35.210643Z" modified="2023-10-18T13:51:35.210650Z" visited="2023-10-18T13:51:35.210644Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/sql"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2023-10-18T13:51:35.210646Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/Downloads/data.sql" added="2023-10-18T13:54:05.031362Z" modified="2023-10-18T13:54:05.306023Z" visited="2023-10-18T13:54:05.031364Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/sql"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2023-10-18T13:54:05.306021Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/code" added="2023-10-18T14:21:03.310981Z" modified="2023-10-19T16:26:21.267474Z" visited="2023-10-18T14:21:03.310983Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-10-19T16:26:21.267472Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/code/gintree" added="2023-10-18T14:21:14.527227Z" modified="2023-10-18T14:21:14.527234Z" visited="2023-10-18T14:21:14.527228Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-10-18T14:21:14.527230Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/code/panel" added="2023-10-18T14:21:17.111561Z" modified="2023-10-18T14:21:17.111568Z" visited="2023-10-18T14:21:17.111562Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-10-18T14:21:17.111564Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/code/panel/search" added="2023-10-18T14:21:18.406313Z" modified="2023-10-18T14:21:18.406320Z" visited="2023-10-18T14:21:18.406315Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-10-18T14:21:18.406316Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/.local/share/DBeaverData" added="2023-10-18T14:21:42.460458Z" modified="2023-10-18T14:21:42.460465Z" visited="2023-10-18T14:21:42.460459Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-10-18T14:21:42.460461Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/.local/share/DBeaverData/workspace6" added="2023-10-18T14:21:43.503491Z" modified="2023-10-18T14:21:43.503498Z" visited="2023-10-18T14:21:43.503492Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-10-18T14:21:43.503494Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/.local/share/DBeaverData/workspace6/General" added="2023-10-18T14:21:44.176534Z" modified="2023-10-18T14:21:44.176541Z" visited="2023-10-18T14:21:44.176535Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-10-18T14:21:44.176537Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/.local/share/DBeaverData/workspace6/General/Scripts" added="2023-10-18T14:21:44.832314Z" modified="2023-10-18T14:21:44.832321Z" visited="2023-10-18T14:21:44.832315Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-10-18T14:21:44.832317Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/.local/share/DBeaverData/workspace6/General/Scripts/Script-3.sql" added="2023-10-18T14:21:46.262154Z" modified="2023-10-18T14:21:46.262161Z" visited="2023-10-18T14:21:46.262155Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/sql"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-10-18T14:21:46.262157Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/code/go_bk/fn_generatetrigram.sql" added="2023-10-19T15:22:15.696699Z" modified="2023-10-19T15:25:01.709890Z" visited="2023-10-19T15:22:15.696701Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/sql"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2023-10-19T15:22:15.979658Z" count="2"/>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-10-19T15:25:01.709887Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/go" added="2023-10-19T16:26:18.652588Z" modified="2023-10-19T16:26:18.652596Z" visited="2023-10-19T16:26:18.652590Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-10-19T16:26:18.652592Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/Documents/1fichier.txt" added="2023-10-20T14:20:30.688958Z" modified="2023-10-23T06:21:09.135818Z" visited="2023-10-20T14:20:30.688961Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2023-10-20T14:20:30.982029Z" count="2"/>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-10-23T06:21:09.135814Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/Videos/tumblr_s1xeadfeOd1a5qxnr_720.mp4" added="2023-10-23T05:17:30.364154Z" modified="2023-10-23T05:17:30.364171Z" visited="2023-10-23T05:17:30.364157Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2023-10-23T05:17:30.364164Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/Documents" added="2023-10-23T06:20:07.687800Z" modified="2023-11-06T15:33:50.855568Z" visited="2023-10-23T06:20:07.687802Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-11-06T15:33:50.855566Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/Downloads/nsp/A%20Hat%20in%20Time%20(NSP)(2%20DLC).rar" added="2023-10-23T06:21:36.433356Z" modified="2023-10-23T06:21:36.719574Z" visited="2023-10-23T06:21:36.433359Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.rar"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2023-10-23T06:21:36.719572Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/Downloads/nsp/A%20Hat%20in%20Time%20(NSP)(eShop).part2.rar" added="2023-10-23T06:21:39.757418Z" modified="2023-10-23T06:48:50.467829Z" visited="2023-10-23T06:21:39.757421Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.rar"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2023-10-23T06:48:50.467827Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/Downloads/nsp/A%20Hat%20in%20Time%20(NSP)(eShop).part1.rar" added="2023-10-23T06:21:43.063246Z" modified="2023-10-23T06:39:58.878487Z" visited="2023-10-23T06:21:43.063249Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.rar"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2023-10-23T06:39:58.878474Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/Downloads/nsp/A%20Hat%20in%20Time%20(NSP)(Update%201.0.4).rar" added="2023-10-23T06:21:46.184536Z" modified="2023-10-23T06:57:38.855846Z" visited="2023-10-23T06:21:46.184538Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.rar"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2023-10-23T06:57:38.855844Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/Downloads/nsp/Little%20Town%20Hero%20(NSP)(Update%201.0.2).rar" added="2023-10-23T06:21:49.579785Z" modified="2023-10-23T06:42:34.505052Z" visited="2023-10-23T06:21:49.579788Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.rar"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2023-10-23T06:42:34.505047Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/Downloads/nsp/Little%20Town%20Hero%20(NSP)(eShop).rar" added="2023-10-23T06:21:53.172195Z" modified="2023-10-23T06:32:12.435261Z" visited="2023-10-23T06:21:53.172198Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.rar"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2023-10-23T06:32:12.435243Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/Downloads/nsp/Spirit%20Hunter%20NG%20(NSP)(Update%201.0.1).rar" added="2023-10-23T06:22:01.931275Z" modified="2023-10-23T06:22:24.270420Z" visited="2023-10-23T06:22:01.931278Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.rar"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2023-10-23T06:22:24.270418Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/Downloads/nsp/Corpse%20Party%20Blood%20Drive%20(NSP)(eShop).rar" added="2023-10-23T06:22:21.924896Z" modified="2023-10-23T06:50:28.706160Z" visited="2023-10-23T06:22:21.924899Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.rar"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2023-10-23T06:50:28.706148Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/Downloads/nsp/Spirit%20Hunter%20NG%20(NSP)(eShop).rar" added="2023-10-23T06:57:57.102502Z" modified="2023-10-23T06:57:57.390433Z" visited="2023-10-23T06:57:57.102505Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.rar"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2023-10-23T06:57:57.390431Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/.config" added="2023-10-24T16:44:51.049031Z" modified="2023-10-24T16:44:51.049038Z" visited="2023-10-24T16:44:51.049032Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-10-24T16:44:51.049034Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/.local" added="2023-10-24T16:44:51.049051Z" modified="2023-11-06T15:30:56.486368Z" visited="2023-10-24T16:44:51.049051Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-11-06T15:30:56.486366Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/remap.sh" added="2023-10-24T16:44:51.049061Z" modified="2023-10-24T16:44:51.049065Z" visited="2023-10-24T16:44:51.049062Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-10-24T16:44:51.049063Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/remap.service" added="2023-10-24T16:44:51.049072Z" modified="2023-10-24T16:44:51.049075Z" visited="2023-10-24T16:44:51.049072Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-dbus-service"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-10-24T16:44:51.049073Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/Downloads/JetBrainsMono-2.304.zip" added="2023-10-24T17:05:56.448585Z" modified="2023-10-24T17:06:10.980197Z" visited="2023-10-24T17:05:56.448587Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2023-10-24T17:05:56.737565Z" count="2"/>
+          <bookmark:application name="Thunar" exec="&apos;Thunar %u&apos;" modified="2023-10-24T17:06:10.980193Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/Downloads/JetBrainsMono-2.304" added="2023-10-24T17:06:16.414132Z" modified="2023-10-24T17:16:00.666915Z" visited="2023-10-24T17:06:16.414133Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;Thunar %u&apos;" modified="2023-10-24T17:16:00.666913Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/Downloads/JetBrainsMono-2.304/fonts" added="2023-10-24T17:06:17.852457Z" modified="2023-10-24T17:16:01.809022Z" visited="2023-10-24T17:06:17.852459Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;Thunar %u&apos;" modified="2023-10-24T17:16:01.809019Z" count="5"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/Downloads/JetBrainsMono-2.304/fonts/ttf" added="2023-10-24T17:06:21.085346Z" modified="2023-10-24T17:15:34.959486Z" visited="2023-10-24T17:06:21.085348Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;Thunar %u&apos;" modified="2023-10-24T17:15:34.959484Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/Downloads/JetBrainsMono-2.304/fonts/webfonts" added="2023-10-24T17:06:22.185534Z" modified="2023-10-24T17:16:12.075193Z" visited="2023-10-24T17:06:22.185535Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;Thunar %u&apos;" modified="2023-10-24T17:16:12.075190Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/Downloads/JetBrainsMono-2.304/fonts/variable" added="2023-10-24T17:06:23.299005Z" modified="2023-10-24T17:16:02.399513Z" visited="2023-10-24T17:06:23.299006Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;Thunar %u&apos;" modified="2023-10-24T17:16:02.399510Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/Downloads/JetBrainsMono-2.304/OFL.txt" added="2023-10-24T17:14:40.274958Z" modified="2023-10-24T17:14:40.274965Z" visited="2023-10-24T17:14:40.274959Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;Thunar %u&apos;" modified="2023-10-24T17:14:40.274961Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/Public" added="2023-11-06T15:31:01.823473Z" modified="2023-11-06T15:33:54.662844Z" visited="2023-11-06T15:31:01.823475Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-11-06T15:33:54.662841Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/Templates" added="2023-11-06T15:31:05.861951Z" modified="2023-11-09T03:16:45.935354Z" visited="2023-11-06T15:31:05.861953Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-11-09T03:16:45.935351Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/Pictures/wallpaperflare.com_wallpaper.jpg" added="2023-11-06T15:38:12.439774Z" modified="2023-11-06T15:38:12.719103Z" visited="2023-11-06T15:38:12.439777Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2023-11-06T15:38:12.719101Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/Pictures/wall.jpg" added="2023-11-06T16:19:23.985022Z" modified="2023-11-06T16:19:27.205098Z" visited="2023-11-06T16:19:23.985022Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-11-06T16:19:27.205095Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/installs.txt" added="2023-11-09T03:14:43.998565Z" modified="2023-11-09T03:14:43.998573Z" visited="2023-11-09T03:14:43.998567Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2023-11-09T03:14:43.998569Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/dotfiles" added="2023-11-09T03:15:54.013079Z" modified="2023-11-09T03:47:38.445579Z" visited="2023-11-09T03:15:54.013081Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-11-09T03:47:38.445576Z" count="6"/>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2023-11-09T03:25:19.656318Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/Videos" added="2023-11-09T03:16:46.892008Z" modified="2023-11-09T03:16:46.892014Z" visited="2023-11-09T03:16:46.892009Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-11-09T03:16:46.892011Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/.nvidia-settings-rc" added="2023-11-09T03:16:51.002955Z" modified="2023-11-09T03:16:51.002961Z" visited="2023-11-09T03:16:51.002956Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-11-09T03:16:51.002958Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/dotfiles/remap.service" added="2023-11-09T03:17:18.793979Z" modified="2023-11-09T03:17:34.820340Z" visited="2023-11-09T03:17:18.793981Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-dbus-service"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-11-09T03:17:34.820334Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/dotfiles/installs.txt" added="2023-11-09T03:17:22.161561Z" modified="2023-11-09T03:17:22.161563Z" visited="2023-11-09T03:17:22.161562Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-11-09T03:17:22.161562Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/.cargo" added="2023-11-09T03:17:50.601761Z" modified="2023-11-09T03:17:50.601768Z" visited="2023-11-09T03:17:50.601762Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-11-09T03:17:50.601764Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/.cargo/.crates.toml" added="2023-11-09T03:17:53.575140Z" modified="2023-11-09T03:17:53.575142Z" visited="2023-11-09T03:17:53.575141Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/toml"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-11-09T03:17:53.575141Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/.cache" added="2023-11-09T03:18:02.041477Z" modified="2023-11-09T03:18:02.041483Z" visited="2023-11-09T03:18:02.041478Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-11-09T03:18:02.041480Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/.mozilla" added="2023-11-09T03:18:07.683746Z" modified="2023-11-09T03:18:09.660894Z" visited="2023-11-09T03:18:07.683747Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-11-09T03:18:09.660891Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/.mozilla/extensions" added="2023-11-09T03:18:11.293735Z" modified="2023-11-09T03:18:11.293744Z" visited="2023-11-09T03:18:11.293736Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-11-09T03:18:11.293739Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/.mozilla/firefox" added="2023-11-09T03:18:12.431419Z" modified="2023-11-09T03:18:12.431427Z" visited="2023-11-09T03:18:12.431420Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-11-09T03:18:12.431422Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/.rustup" added="2023-11-09T03:18:18.288359Z" modified="2023-11-09T03:18:18.288367Z" visited="2023-11-09T03:18:18.288361Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-11-09T03:18:18.288363Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/duc/.rustup/downloads" added="2023-11-09T03:18:19.680437Z" modified="2023-11-09T03:18:19.680445Z" visited="2023-11-09T03:18:19.680439Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2023-11-09T03:18:19.680440Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

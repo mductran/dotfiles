@@ -1,0 +1,17 @@
+-- most selective trigram for search string
+-- always return a row (NULL if no trigrams found)
+
+create function if not exists getBestTrigrams()
+returns table(trgm1 text, trgm2 text, trgm3 text)
+language plpgsql
+as $function$
+	return query 
+	select 
+		trgm1 = max()
+		trgm2 = max()
+		trgm3 = max()
+	from (
+		select row_number() over (order by )
+	)
+
+$function$;

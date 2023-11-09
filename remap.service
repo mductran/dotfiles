@@ -1,0 +1,10 @@
+[Unit]
+Description=Remap Daemon
+
+[Service]
+Type=simple
+User=root
+ExecStart=/home/duc/.cargo/bin/xremap /home/duc/.config/xremap/config.yml
+
+[Install]
+WantedBy=default.target

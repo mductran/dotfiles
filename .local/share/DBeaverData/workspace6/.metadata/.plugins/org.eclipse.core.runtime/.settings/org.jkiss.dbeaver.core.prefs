@@ -1,0 +1,9 @@
+dialog.default.folder=/home/duc
+driver.selector.orderBy=score
+eclipse.preferences.version=1
+org.jkiss.dbeaver.core.confirm.exit=never
+resultset.presentation.active=spreadsheet
+resultset.text.line.number=true
+tipOfTheDayInitializer.notFirstRun=true
+ui.auto.update.check.time=1697736391340
+ui.show.tip.of.the.day.on.startup=false

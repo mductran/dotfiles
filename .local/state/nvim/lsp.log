@@ -1,0 +1,40 @@
+[START][2023-10-24 23:55:08] LSP logging initiated
+[ERROR][2023-10-24 23:55:08] .../vim/lsp/rpc.lua:734	"rpc"	"/home/duc/.local/share/nvim/mason/bin/vscode-css-language-server"	"stderr"	"/usr/bin/env: ‘node’: No such file or directory\n"
+[START][2023-10-25 00:00:44] LSP logging initiated
+[ERROR][2023-10-25 00:00:44] .../vim/lsp/rpc.lua:734	"rpc"	"/home/duc/.local/share/nvim/mason/bin/vscode-css-language-server"	"stderr"	"/usr/bin/env: ‘node’: No such file or directory\n"
+[START][2023-10-25 00:02:17] LSP logging initiated
+[ERROR][2023-10-25 00:02:17] .../vim/lsp/rpc.lua:734	"rpc"	"/home/duc/.local/share/nvim/mason/bin/vscode-css-language-server"	"stderr"	"/usr/bin/env: ‘node’: No such file or directory\n"
+[START][2023-10-25 00:10:08] LSP logging initiated
+[ERROR][2023-10-25 00:10:08] .../vim/lsp/rpc.lua:734	"rpc"	"/home/duc/.local/share/nvim/mason/bin/vscode-css-language-server"	"stderr"	"/usr/bin/env: ‘node’: No such file or directory\n"
+[START][2023-11-06 22:33:11] LSP logging initiated
+[ERROR][2023-11-06 22:33:11] .../vim/lsp/rpc.lua:734	"rpc"	"/home/duc/.local/share/nvim/mason/bin/vscode-css-language-server"	"stderr"	"/usr/bin/env: ‘node’: No such file or directory\n"
+[START][2023-11-06 22:44:17] LSP logging initiated
+[ERROR][2023-11-06 22:44:17] .../vim/lsp/rpc.lua:734	"rpc"	"/home/duc/.local/share/nvim/mason/bin/vscode-css-language-server"	"stderr"	"/usr/bin/env: ‘node’: No such file or directory\n"
+[START][2023-11-06 22:45:01] LSP logging initiated
+[ERROR][2023-11-06 22:45:01] .../vim/lsp/rpc.lua:734	"rpc"	"/home/duc/.local/share/nvim/mason/bin/vscode-css-language-server"	"stderr"	"/usr/bin/env: ‘node’: No such file or directory\n"
+[START][2023-11-06 22:45:15] LSP logging initiated
+[ERROR][2023-11-06 22:45:15] .../vim/lsp/rpc.lua:734	"rpc"	"/home/duc/.local/share/nvim/mason/bin/vscode-css-language-server"	"stderr"	"/usr/bin/env: ‘node’: No such file or directory\n"
+[START][2023-11-06 22:45:56] LSP logging initiated
+[ERROR][2023-11-06 22:45:56] .../vim/lsp/rpc.lua:734	"rpc"	"/home/duc/.local/share/nvim/mason/bin/vscode-css-language-server"	"stderr"	"/usr/bin/env: ‘node’: No such file or directory\n"
+[START][2023-11-06 22:46:11] LSP logging initiated
+[ERROR][2023-11-06 22:46:11] .../vim/lsp/rpc.lua:734	"rpc"	"/home/duc/.local/share/nvim/mason/bin/vscode-css-language-server"	"stderr"	"/usr/bin/env: ‘node’: No such file or directory\n"
+[START][2023-11-06 22:46:25] LSP logging initiated
+[ERROR][2023-11-06 22:46:25] .../vim/lsp/rpc.lua:734	"rpc"	"/home/duc/.local/share/nvim/mason/bin/vscode-css-language-server"	"stderr"	"/usr/bin/env: ‘node’: No such file or directory\n"
+[START][2023-11-06 22:54:19] LSP logging initiated
+[ERROR][2023-11-06 22:54:19] .../vim/lsp/rpc.lua:734	"rpc"	"/home/duc/.local/share/nvim/mason/bin/vscode-css-language-server"	"stderr"	"/usr/bin/env: ‘node’: No such file or directory\n"
+[START][2023-11-06 22:58:26] LSP logging initiated
+[ERROR][2023-11-06 22:58:26] .../vim/lsp/rpc.lua:734	"rpc"	"/home/duc/.local/share/nvim/mason/bin/vscode-css-language-server"	"stderr"	"/usr/bin/env: ‘node’: No such file or directory\n"
+[START][2023-11-06 22:58:51] LSP logging initiated
+[ERROR][2023-11-06 22:58:51] .../vim/lsp/rpc.lua:734	"rpc"	"/home/duc/.local/share/nvim/mason/bin/vscode-css-language-server"	"stderr"	"/usr/bin/env: ‘node’: No such file or directory\n"
+[START][2023-11-06 23:01:50] LSP logging initiated
+[ERROR][2023-11-06 23:01:50] .../vim/lsp/rpc.lua:734	"rpc"	"/home/duc/.local/share/nvim/mason/bin/vscode-css-language-server"	"stderr"	"/usr/bin/env: ‘node’: No such file or directory\n"
+[START][2023-11-06 23:05:57] LSP logging initiated
+[ERROR][2023-11-06 23:05:57] .../vim/lsp/rpc.lua:734	"rpc"	"/home/duc/.local/share/nvim/mason/bin/vscode-css-language-server"	"stderr"	"/usr/bin/env: ‘node’: No such file or directory\n"
+[START][2023-11-06 23:07:15] LSP logging initiated
+[ERROR][2023-11-06 23:07:15] .../vim/lsp/rpc.lua:734	"rpc"	"/home/duc/.local/share/nvim/mason/bin/vscode-css-language-server"	"stderr"	"/usr/bin/env: ‘node’: No such file or directory\n"
+[START][2023-11-06 23:08:59] LSP logging initiated
+[ERROR][2023-11-06 23:08:59] .../vim/lsp/rpc.lua:734	"rpc"	"/home/duc/.local/share/nvim/mason/bin/vscode-css-language-server"	"stderr"	"/usr/bin/env: ‘node’: No such file or directory\n"
+[START][2023-11-06 23:11:20] LSP logging initiated
+[ERROR][2023-11-06 23:11:20] .../vim/lsp/rpc.lua:734	"rpc"	"/home/duc/.local/share/nvim/mason/bin/vscode-css-language-server"	"stderr"	"/usr/bin/env: ‘node’: No such file or directory\n"
+[START][2023-11-06 23:13:16] LSP logging initiated
+[ERROR][2023-11-06 23:13:16] .../vim/lsp/rpc.lua:734	"rpc"	"/home/duc/.local/share/nvim/mason/bin/vscode-css-language-server"	"stderr"	"/usr/bin/env: ‘node’: No such file or directory\n"

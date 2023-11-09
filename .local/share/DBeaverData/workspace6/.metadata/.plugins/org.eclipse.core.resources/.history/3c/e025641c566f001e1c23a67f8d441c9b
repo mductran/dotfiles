@@ -1,0 +1,19 @@
+create extension pg_trgm;
+
+create table if not exists Trigrams as (
+select
+	id, trgm.trgm as trigram
+from
+	bstrings20,
+	lateral unnest(show_trgm(bstrings20.phash)) as trgm
+where
+	length(trim(trgm)) = 3);
+
+
+-- TODO: row compression
+create or replace view trigramCountView as 
+	select t.trigram, cnt = count(*)
+	from trigrams t group by t.trigram;
+
+create unique index trgm_ind on trigramCountView(trigram);
+cluster trigramCountView using trgm_ind;

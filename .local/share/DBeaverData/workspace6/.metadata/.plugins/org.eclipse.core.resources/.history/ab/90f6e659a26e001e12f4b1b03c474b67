@@ -1,0 +1,1 @@
+select * from generatetrigram('0229ecefd5da5d3f996f343fc2a083a77e938ed63b95b54514e9ab3c3127577e') where trigram not like '%.%';

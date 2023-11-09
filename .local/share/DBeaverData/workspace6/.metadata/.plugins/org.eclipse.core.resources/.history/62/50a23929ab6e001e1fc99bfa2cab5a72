@@ -1,0 +1,2 @@
+select trigram from generatetrigram(bstrings20.phash) ; 
+

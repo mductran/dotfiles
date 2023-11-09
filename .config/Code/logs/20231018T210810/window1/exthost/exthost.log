@@ -1,0 +1,11 @@
+2023-10-18 21:08:11.359 [info] Extension host with pid 26723 started
+2023-10-18 21:08:11.359 [info] Skipping acquiring lock for /home/duc/.config/Code/User/workspaceStorage/bb02cfa280c4120e048d1c86339f7098.
+2023-10-18 21:08:11.385 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*'
+2023-10-18 21:08:11.391 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2023-10-18 21:08:11.401 [info] Eager extensions activated
+2023-10-18 21:08:11.402 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2023-10-18 21:08:11.402 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2023-10-18 21:08:11.405 [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+2023-10-18 21:08:12.813 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: 'api', root cause: vscode.github
+2023-10-18 21:08:20.490 [info] Extension host terminating: renderer closed the MessagePort
+2023-10-18 21:08:20.493 [info] Extension host with pid 26723 exiting with code 0

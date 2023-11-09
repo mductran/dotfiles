@@ -1,0 +1,21 @@
+-- most selective trigram for search string
+-- always return a row (NULL if no trigrams found)
+
+create function if not exists getBestTrigrams(string text)
+returns table(trgm1 text, trgm2 text, trgm3 text)
+language plpgsql
+as $function$
+	return query 
+	select 
+		trgm1 = max(case when bt.n = 1 then bt.trigram end)
+		trgm2 = max(case when bt.n = 2 then bt.trigram end)
+		trgm3 = max(case when bt.n = 3 then bt.trigram end)
+	from (
+		SELECT 
+			cast(row_number() over (order by A.v) as int) n,
+			gt.trigram as trigram
+		FROM
+			(unnest(show_trgm(string)) where length(unnest)=3) gt JOIN trigramCountView tcv on gt.trigram = tcv.trigram order by tcv.cnt asc;  
+	) bt;
+
+$function$;

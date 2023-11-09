@@ -1,0 +1,5 @@
+modmap:
+  - name: Default
+    remap:
+      KEY_CAPSLOCK: KEY_LEFTMETA
+      KEY_LEFTMETA: KEY_CAPSLOCK

@@ -1,0 +1,14 @@
+2023-10-18 10:54:07.166 [info] Getting Manifest... bracketpaircolordlw.bracket-pair-color-dlw
+2023-10-18 10:54:07.171 [info] Installing extension: bracketpaircolordlw.bracket-pair-color-dlw
+2023-10-18 10:54:07.871 [warning] Extension signature verification failed with error 'UnknownError': bracketpaircolordlw.bracket-pair-color-dlw
+2023-10-18 10:54:07.880 [info] Extracted extension to file:///home/duc/.vscode/extensions/bracketpaircolordlw.bracket-pair-color-dlw-0.0.6: bracketpaircolordlw.bracket-pair-color-dlw
+2023-10-18 10:54:07.881 [info] Renamed to /home/duc/.vscode/extensions/bracketpaircolordlw.bracket-pair-color-dlw-0.0.6
+2023-10-18 10:54:07.881 [info] Extracting extension completed. bracketpaircolordlw.bracket-pair-color-dlw
+2023-10-18 10:54:07.884 [info] Extension installed successfully: bracketpaircolordlw.bracket-pair-color-dlw
+2023-10-18 10:54:07.968 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/duc/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/duc/.vscode/extensions/extensions.json.vsctmp'
+    at s.create (/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30209)
+    at i (/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30329)
+    at t.fb (/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:35755)
+    at t.stat (/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:28201)
+    at async w.stat (/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:15579)
+    at async Q.tb (/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:109:9514)

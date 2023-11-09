@@ -1,0 +1,8 @@
+2023-10-23 20:28:45.296 [info] Extension host with pid 201397 started
+2023-10-23 20:28:45.314 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2023-10-23 20:28:45.325 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*'
+2023-10-23 20:28:45.329 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2023-10-23 20:28:45.335 [info] Eager extensions activated
+2023-10-23 20:28:45.351 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2023-10-23 20:28:45.352 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2023-10-23 20:28:45.355 [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'

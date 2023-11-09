@@ -1,0 +1,20 @@
+create function GenerateTrigram(string varchar) 
+returns table (trigram varchar)
+language plpgsql
+as 
+$$
+	declare top int;
+	begin
+		top = case
+				when length(string) > 2 then length(string) - 2
+				else 0
+		end;
+		with N16 as
+			V.v from (
+				values                    
+					(0),(0),(0),(0),(0),(0),(0),(0),
+                	(0),(0),(0),(0),(0),(0),(0),(0)
+			) as V (v),
+			Nums as 
+	end;
+$$ ;

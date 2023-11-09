@@ -1,0 +1,19 @@
+-- search implementation
+create or replace function trigramSearch(@searchterm text) 
+returns table 
+language plpgsql
+as $function$
+	
+	begin
+		
+		return query 
+			select r.string from getbesttrigrams(searchterm) as gbt
+			lateral (
+				select e.id, e.phash from getmatchingtrigramid() as mid
+				join bstrings20 as e on e.id = mid.id
+				where gbt.trgm1 is not null and e.phash like searchterm;
+			)
+	end;
+	
+
+$function$

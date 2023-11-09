@@ -1,0 +1,7 @@
+SELECT * 
+FROM pg_collation;
+
+select * from generatetrigram('SQLperformance.com') where trigram not like '[^A-Z0-9a-z]';
+
+
+--select * from (select * from bstrings limit 1) as b, lateral generatetrigram(b.phash);

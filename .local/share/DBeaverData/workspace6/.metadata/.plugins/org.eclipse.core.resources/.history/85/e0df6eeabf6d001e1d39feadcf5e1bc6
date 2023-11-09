@@ -1,0 +1,37 @@
+create or replace function GenerateTrigram(string text)
+returns table (trigram text)
+language plpgsql
+as
+$$
+	declare top int;
+	begin
+		top = case
+			when length(string) > 2 then length(string) - 2
+			else 0
+		end;
+		with N16 as 
+		(
+			select V.v from 
+			(
+				values
+					(0),(0),(0),(0),(0),(0),(0),(0),
+					(0),(0),(0),(0),(0),(0),(0),(0)
+			) as V (v)
+		),
+		Nums as
+		(
+			select n = row_number() over (order by A.v)
+			from N16 as A
+			cross join N16 as B
+		),
+		Trigrams as 
+		(
+			select trigrams = substring(string, N.n, 3) from Nums as N order by N.n limit top
+		)
+		
+		select distinct T.trigram 
+			from Trigrams as T 
+			where T.trigram collate Latin1_General_BIN2 
+			not like '%[^A-Z0-9a-z]%';
+	end;
+$$;

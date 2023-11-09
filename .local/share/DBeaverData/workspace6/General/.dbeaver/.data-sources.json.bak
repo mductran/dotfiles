@@ -1,0 +1,48 @@
+{
+	"folders": {},
+	"connections": {
+		"dbeaver-sample-database-sqlite-1": {
+			"provider": "sqlite",
+			"driver": "sqlite_jdbc",
+			"name": "DBeaver Sample Database (SQLite)",
+			"save-password": true,
+			"show-system-objects": true,
+			"configuration": {
+				"database": "/home/duc/.local/share/DBeaverData/workspace6/.metadata/sample-database-sqlite-1/Chinook.db",
+				"url": "jdbc:sqlite:/home/duc/.local/share/DBeaverData/workspace6/.metadata/sample-database-sqlite-1/Chinook.db",
+				"configurationType": "MANUAL",
+				"type": "dev"
+			}
+		},
+		"postgres-jdbc-18b3b70e5fb-3706c7558bb5e92": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "bkstrings_sample",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "5432",
+				"database": "bksearch_sample",
+				"url": "jdbc:postgresql://localhost:5432/bksearch_sample",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"provider-properties": {},
+				"auth-model": "native"
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"smart-commit": false,
+			"smart-commit-recover": false,
+			"auto-close-transactions": true,
+			"close-transactions-period": 1800
+		}
+	}
+}

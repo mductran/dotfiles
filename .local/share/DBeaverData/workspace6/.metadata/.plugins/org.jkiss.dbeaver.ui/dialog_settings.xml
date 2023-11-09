@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="DriverDownload">
+	</section>
+	<section name="DBeaver.DriverDownloadDialog">
+		<item key="DIALOG_X_ORIGIN" value="0"/>
+		<item key="DIALOG_Y_ORIGIN" value="0"/>
+		<item key="DIALOG_WIDTH" value="753"/>
+		<item key="DIALOG_HEIGHT" value="787"/>
+		<item key="DIALOG_FONT_NAME" value="1|Cantarell|11.0|0|GTK|1|"/>
+	</section>
+	<section name="DBeaver.DriverTabbedViewer">
+	</section>
+	<section name="DBeaver.ActiveWizardDialog.NewConnectionWizard">
+		<item key="DIALOG_X_ORIGIN" value="0"/>
+		<item key="DIALOG_Y_ORIGIN" value="0"/>
+		<item key="DIALOG_WIDTH" value="644"/>
+		<item key="DIALOG_HEIGHT" value="610"/>
+		<item key="DIALOG_FONT_NAME" value="1|Cantarell|11.0|0|GTK|1|"/>
+	</section>
+	<section name="DBeaver.StandardErrorDialog">
+		<item key="showDetails" value="true"/>
+		<item key="DIALOG_X_ORIGIN" value="0"/>
+		<item key="DIALOG_Y_ORIGIN" value="0"/>
+		<item key="DIALOG_WIDTH" value="1792"/>
+		<item key="DIALOG_HEIGHT" value="1067"/>
+		<item key="DIALOG_FONT_NAME" value="1|Cantarell|11.0|0|GTK|1|"/>
+	</section>
+	<section name="DBeaver.EditConnectionDialog">
+		<item key="DIALOG_X_ORIGIN" value="0"/>
+		<item key="DIALOG_Y_ORIGIN" value="0"/>
+		<item key="DIALOG_WIDTH" value="700"/>
+		<item key="DIALOG_HEIGHT" value="714"/>
+		<item key="DIALOG_FONT_NAME" value="1|Cantarell|11.0|0|GTK|1|"/>
+	</section>
+	<section name="DBeaver.EditObjectDialog.PropertyObjectEditPage">
+		<item key="DIALOG_X_ORIGIN" value="0"/>
+		<item key="DIALOG_Y_ORIGIN" value="0"/>
+		<item key="DIALOG_WIDTH" value="531"/>
+		<item key="DIALOG_HEIGHT" value="322"/>
+		<item key="DIALOG_FONT_NAME" value="1|Cantarell|11.0|0|GTK|1|"/>
+	</section>
+	<section name="DBeaver.ViewSQLDialog">
+		<item key="DIALOG_X_ORIGIN" value="0"/>
+		<item key="DIALOG_Y_ORIGIN" value="0"/>
+		<item key="DIALOG_WIDTH" value="524"/>
+		<item key="DIALOG_HEIGHT" value="502"/>
+		<item key="DIALOG_FONT_NAME" value="1|Cantarell|11.0|0|GTK|1|"/>
+	</section>
+	<section name="ResultSetViewer">
+		<section name="presentations">
+			<section name="spreadsheet">
+				<item key="enabledPanelIds" value="value-view"/>
+				<item key="activePanelId" value="value-view"/>
+				<item key="panelRatio" value="300"/>
+				<item key="panelsVisible" value="true"/>
+				<item key="verticalLayout" value="false"/>
+			</section>
+			<section name="plaintext">
+				<item key="enabledPanelIds" value="value-view"/>
+				<item key="activePanelId" value="value-view"/>
+				<item key="panelRatio" value="0"/>
+				<item key="panelsVisible" value="true"/>
+				<item key="verticalLayout" value="false"/>
+			</section>
+		</section>
+	</section>
+	<section name="DBeaver.ShowTipOfTheDayDialog">
+		<item key="DIALOG_X_ORIGIN" value="0"/>
+		<item key="DIALOG_Y_ORIGIN" value="0"/>
+		<item key="DIALOG_WIDTH" value="365"/>
+		<item key="DIALOG_HEIGHT" value="239"/>
+		<item key="DIALOG_FONT_NAME" value="1|Cantarell|11.0|0|GTK|1|"/>
+	</section>
+	<section name="DBeaver.QM.LogViewer">
+		<item key="column-result" value="134"/>
+	</section>
+	<section name="DBeaver.EditObjectDialog.CreateFunctionPage">
+		<item key="DIALOG_X_ORIGIN" value="0"/>
+		<item key="DIALOG_Y_ORIGIN" value="0"/>
+		<item key="DIALOG_WIDTH" value="318"/>
+		<item key="DIALOG_HEIGHT" value="294"/>
+		<item key="DIALOG_FONT_NAME" value="1|Cantarell|11.0|0|GTK|1|"/>
+	</section>
+	<section name="DBeaver.SQLQueryParameterBindDialog">
+		<item key="DIALOG_X_ORIGIN" value="0"/>
+		<item key="DIALOG_Y_ORIGIN" value="0"/>
+		<item key="DIALOG_WIDTH" value="440"/>
+		<item key="DIALOG_HEIGHT" value="525"/>
+		<item key="DIALOG_FONT_NAME" value="1|Cantarell|11.0|0|GTK|1|"/>
+		<item key="PARAM_HIDE_IF_SET" value="false"/>
+	</section>
+	<section name="ObjectContainerSelector">
+	</section>
+	<section name="DBeaver.ScriptSelectorPopup">
+		<item key="DIALOG_X_ORIGIN" value="0"/>
+		<item key="DIALOG_Y_ORIGIN" value="0"/>
+		<item key="DIALOG_WIDTH" value="538"/>
+		<item key="DIALOG_HEIGHT" value="353"/>
+		<item key="DIALOG_FONT_NAME" value="1|Cantarell|11.0|0|GTK|1|"/>
+	</section>
+	<section name="DBeaver.TransactionLogDialog">
+		<item key="DIALOG_X_ORIGIN" value="0"/>
+		<item key="DIALOG_Y_ORIGIN" value="0"/>
+		<item key="DIALOG_WIDTH" value="960"/>
+		<item key="DIALOG_HEIGHT" value="298"/>
+		<item key="DIALOG_FONT_NAME" value="1|Cantarell|11.0|0|GTK|1|"/>
+	</section>
+</section>

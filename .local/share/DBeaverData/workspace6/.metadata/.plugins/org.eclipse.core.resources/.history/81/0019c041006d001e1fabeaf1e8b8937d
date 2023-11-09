@@ -1,0 +1,3 @@
+create function bstrings.GenerateTrigram(string varchar(64) {
+	
+}

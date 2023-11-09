@@ -1,0 +1,3 @@
+-- most selective trigram for search string
+-- always return a row (NULL if no trigrams found)
+

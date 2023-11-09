@@ -1,0 +1,1 @@
+-- retrieve from trigram tables all rows that match values retrived from getBestTrigram()

@@ -1,0 +1,1 @@
+select * from generatetrigram('SQLperformance.com') where trigram like '[a-zA-Z0-9].*';

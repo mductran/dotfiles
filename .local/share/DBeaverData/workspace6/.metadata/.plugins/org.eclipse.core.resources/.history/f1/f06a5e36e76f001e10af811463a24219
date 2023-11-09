@@ -1,0 +1,16 @@
+--select trgm1, trgm2, trgm3 from getbesttrigrams('%1234%5678%');
+
+select 
+			trgm1 = max(case when bt.n = 1 then bt.trigram end),
+			trgm2 = max(case when bt.n = 2 then bt.trigram end),
+			trgm3 = max(case when bt.n = 3 then bt.trigram end)
+		from (
+			SELECT 
+				cast(row_number() over (order by A.v) as int) n,
+				gt.trigram as trigram
+			from
+				-- TODO: wrap unnest in a function
+				trigramCountView tcv
+					join (select * from unnest(show_trgm('hellostring')) as trigram where length(trim(trigram)) = 3) gt 
+					on gt.trigram = tcv.trigram order by tcv.cnt asc 
+		) bt;
